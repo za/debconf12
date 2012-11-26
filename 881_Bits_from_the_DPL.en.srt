@@ -1,0 +1,2941 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+Daniel: Welcome everyone, this is the "Bits from the DPL"
+
+2
+00:00:05,000 --> 00:00:09,570
+with our Debian Project Leader, Stefano Zacchiroli
+
+3
+00:00:09,570 --> 00:00:13,550
+so, really, give a round of applause, I don't think he need much of an introduction
+
+4
+00:00:13,550 --> 00:00:14,370
+Stefano: Thanks
+
+5
+00:00:14,370 --> 00:00:22,200
+[applause]
+
+6
+00:00:22,200 --> 00:00:25,620
+So, I'm sure you're here because this will be the last time
+
+7
+00:00:25,650 --> 00:00:28,100
+I'll bother you with this "Bits from the DPL" speech,
+
+8
+00:00:28,120 --> 00:00:30,410
+at least at a DebConf, so thanks for being here.
+
+9
+00:00:30,410 --> 00:00:35,580
+In this talk, I'm gonna go through two main parts:
+
+10
+00:00:35,580 --> 00:00:40,390
+the first one is some sorts of... a set of mantras
+
+11
+00:00:40,390 --> 00:00:43,670
+that have become the way I define Debian today.
+
+12
+00:00:43,670 --> 00:00:47,140
+I've presented them to various people before
+
+13
+00:00:47,140 --> 00:00:49,490
+I see there is enough people in the room
+
+14
+00:00:49,530 --> 00:00:52,010
+that won't be bothered because it's the first time they hear them,
+
+15
+00:00:52,050 --> 00:00:54,340
+so I hope you will allow me to go through them.
+
+16
+00:00:54,340 --> 00:00:57,740
+And then, after this kind of defining mantras of Debian,
+
+17
+00:00:57,750 --> 00:01:01,570
+I will present some of the challenges that I think we have in Debian
+
+18
+00:01:01,610 --> 00:01:03,290
+and that we need to take care of
+
+19
+00:01:03,290 --> 00:01:06,510
+to guarantee that we have a long and healthy life ahead.
+
+20
+00:01:06,510 --> 00:01:11,920
+But before that I'm trying to make the point that we did make history.
+
+21
+00:01:11,920 --> 00:01:15,780
+So, this is how Debian started in 1993,
+
+22
+00:01:15,780 --> 00:01:16,740
+the first quote.
+
+23
+00:01:16,740 --> 00:01:20,250
+1993 is almost twenty years ago.
+
+24
+00:01:20,250 --> 00:01:25,100
+Back then there were very few GNU/Linux distributions around,
+
+25
+00:01:25,100 --> 00:01:27,310
+and they were... they had troubles,
+
+26
+00:01:27,310 --> 00:01:29,310
+and the quality was not stellar
+
+27
+00:01:29,310 --> 00:01:31,260
+and people started to think about
+
+28
+00:01:31,260 --> 00:01:35,740
+"how can we make GNU/Linux competitive with commercial operating system?"
+
+29
+00:01:35,740 --> 00:01:39,040
+and Ian Murdock came up with this great idea of Debian
+
+30
+00:01:39,040 --> 00:01:41,350
+and this is where all this started.
+
+31
+00:01:41,350 --> 00:01:45,250
+But then we made history at least in two ways:
+
+32
+00:01:45,250 --> 00:01:48,390
+one way is a sort of community and social way:
+
+33
+00:01:48,390 --> 00:01:51,940
+in a more recent interview of a couple of years ago,
+
+34
+00:01:51,940 --> 00:01:56,790
+Ian made the point that Debian has been the first intentional community project;
+
+35
+00:01:56,790 --> 00:01:59,360
+there were distributions back then,
+
+36
+00:01:59,360 --> 00:02:01,860
+there were Free Software projects back then,
+
+37
+00:02:01,860 --> 00:02:04,890
+but Debian was kind of designed with community in mind
+
+38
+00:02:04,890 --> 00:02:09,060
+and with the idea that if you want something to scale to the size of Debian today
+
+39
+00:02:09,060 --> 00:02:10,830
+we need to have a community behind it.
+
+40
+00:02:10,830 --> 00:02:14,120
+So, I think we really made the history
+
+41
+00:02:14,120 --> 00:02:16,480
+showing up how a project as big as Debian
+
+42
+00:02:16,480 --> 00:02:18,480
+can be made only in a community driven way.
+
+43
+00:02:18,480 --> 00:02:21,770
+But then, we also made history in very technical ways:
+
+44
+00:02:21,770 --> 00:02:24,930
+twenty years has passed since 1993
+
+45
+00:02:24,930 --> 00:02:26,620
+and if we look today at Debian
+
+46
+00:02:26,620 --> 00:02:29,930
+we have something like almost forty thousands binary packages,
+
+47
+00:02:29,930 --> 00:02:30,940
+in Debian proper;
+
+48
+00:02:30,940 --> 00:02:33,160
+we have made twelve releases
+
+49
+00:02:33,160 --> 00:02:36,610
+and - who knows? - maybe we'll make the thirteenth before the end of this year;
+
+50
+00:02:36,610 --> 00:02:40,000
+we have a project of almost one thousand members;
+
+51
+00:02:40,000 --> 00:02:43,510
+and almost two hundreds Debian Maintainers
+
+52
+00:02:43,510 --> 00:02:45,660
+that are interested in maintaining some parts of Debian;
+
+53
+00:02:45,660 --> 00:02:48,540
+and various thousands of contributors doing a lot of other stuff
+
+54
+00:02:48,540 --> 00:02:49,450
+useful for the project.
+
+55
+00:02:49,450 --> 00:02:52,200
+We have the largest number of ports
+
+56
+00:02:52,200 --> 00:02:55,390
+among - let's say - "major" binary distributions out there.
+
+57
+00:02:55,390 --> 00:02:57,710
+We have non-Linux ports:
+
+58
+00:02:57,710 --> 00:03:01,620
+we have released a version of Debian that works with a kernel other than Linux.
+
+59
+00:03:01,620 --> 00:03:05,560
+We haven't yet release a version of Debian that works with a kernel like Hurd
+
+60
+00:03:05,560 --> 00:03:08,100
+but for people who like Hurd and want to try it
+
+61
+00:03:08,100 --> 00:03:10,800
+Debian still remains the best choice to do that.
+
+62
+00:03:12,560 --> 00:03:15,310
+Well done! This is us, making this!
+
+63
+00:03:16,360 --> 00:03:18,440
+Bravo! All of you! We made this!
+
+64
+00:03:18,650 --> 00:03:23,120
+But then, one thing is making history
+
+65
+00:03:23,120 --> 00:03:25,810
+in some ways, technically or socially
+
+66
+00:03:25,810 --> 00:03:29,480
+and a completely different thing is remaining relevant.
+
+67
+00:03:29,480 --> 00:03:32,260
+So, in these past three years as DPL
+
+68
+00:03:32,260 --> 00:03:35,650
+I faced the problem that people were starting to question
+
+69
+00:03:35,650 --> 00:03:37,650
+- that was like a couple of years ago -
+
+70
+00:03:37,650 --> 00:03:39,770
+"Do we still need Debian?"
+
+71
+00:03:39,780 --> 00:03:42,980
+"Ok, you made history, you made a lot of stuff
+
+72
+00:03:42,980 --> 00:03:44,720
+you made derivatives, you made a lot of stuff but ...
+
+73
+00:03:44,720 --> 00:03:46,720
+... Do we still need Debian today?"
+
+74
+00:03:46,720 --> 00:03:49,980
+I've asked myself how to answer the question
+
+75
+00:03:49,980 --> 00:03:53,620
+and a way to answer the question is asking us ourselves
+
+76
+00:03:53,620 --> 00:03:57,230
+what's different from what we do and what the other distributions do.
+
+77
+00:03:57,230 --> 00:04:01,530
+There are something like three hundreds, four hundreds active Free Software distributions around:
+
+78
+00:04:01,530 --> 00:04:03,530
+what is that makes Debian special?
+
+79
+00:04:03,530 --> 00:04:07,030
+And I've started to thinking at some answers to that question
+
+80
+00:04:07,030 --> 00:04:13,790
+and I've come to five specific traits that make - I think - the Debian Project unique.
+
+81
+00:04:13,790 --> 00:04:15,610
+I think it's useful to keep them in mind
+
+82
+00:04:15,610 --> 00:04:20,280
+and to remind why we are contributing to Debian and not to some other similar project.
+
+83
+00:04:20,280 --> 00:04:21,880
+The first reason,
+
+84
+00:04:21,880 --> 00:04:25,480
+and sort of my first mantra that makes Debian special,
+
+85
+00:04:25,480 --> 00:04:27,480
+is freedom.
+
+86
+00:04:27,480 --> 00:04:30,630
+This seems obvious but there's freedom in many ways.
+
+87
+00:04:30,630 --> 00:04:34,110
+The first reason why Debian is special in terms of freedom
+
+88
+00:04:34,110 --> 00:04:39,270
+is that we essentially have agreed with our public and with Free Software public in general
+
+89
+00:04:39,270 --> 00:04:40,850
+to keep Debian always free.
+
+90
+00:04:40,850 --> 00:04:45,010
+We've been promoting the culture of Free Software, not only giving Free Software to people,
+
+91
+00:04:45,010 --> 00:04:48,420
+we've been promoting the culture of Free Software since 1993,
+
+92
+00:04:48,420 --> 00:04:52,160
+and we have a product which is free the bottom up
+
+93
+00:04:52,160 --> 00:04:55,300
+there is an incredibly high amount of dog food in what we do.
+
+94
+00:04:55,300 --> 00:04:57,590
+So it is free in the software we give to people
+
+95
+00:04:57,590 --> 00:04:59,770
+and it's free in the way we make it.
+
+96
+00:04:59,770 --> 00:05:02,030
+Every single bit of the Debian infrastructure is free
+
+97
+00:05:02,030 --> 00:05:05,650
+and nobody would accept if we start making Debian using like
+
+98
+00:05:05,650 --> 00:05:08,420
+non free stuff in our infrastructure.
+
+99
+00:05:08,420 --> 00:05:10,720
+This is kind of peculiar per se.
+
+100
+00:05:10,720 --> 00:05:13,830
+And we have also a notion of freeness
+
+101
+00:05:13,830 --> 00:05:15,210
+in the process we use.
+
+102
+00:05:15,210 --> 00:05:18,240
+People who have been around in Debian for quite a while
+
+103
+00:05:18,240 --> 00:05:20,240
+have heard the motto of "There Is Not Cabal!"
+
+104
+00:05:20,240 --> 00:05:22,240
+as some sort of joke, several times.
+
+105
+00:05:22,240 --> 00:05:27,140
+And we use it in saying that, in thinking that there is some cabal around
+
+106
+00:05:27,140 --> 00:05:29,040
+but the point is that if we make this joke
+
+107
+00:05:29,040 --> 00:05:32,230
+it means that we really cannot stand the idea that there is someone
+
+108
+00:05:32,230 --> 00:05:33,930
+driving Debian behind the curtain,
+
+109
+00:05:33,930 --> 00:05:35,580
+driving Debian not in the open.
+
+110
+00:05:35,580 --> 00:05:37,920
+So we are free not only in our infrastructure,
+
+111
+00:05:37,920 --> 00:05:38,880
+not only in the software we make,
+
+112
+00:05:38,880 --> 00:05:40,310
+but also in the way we do things.
+
+113
+00:05:40,310 --> 00:05:43,010
+We try to be as transparent as we could be.
+
+114
+00:05:43,010 --> 00:05:45,730
+And what is interesting for me
+
+115
+00:05:45,730 --> 00:05:47,730
+is that there's some sort of community awareness
+
+116
+00:05:47,730 --> 00:05:50,600
+of this kind of attachment we have for freedom.
+
+117
+00:05:50,600 --> 00:05:55,020
+Our community trusts us to not betray software freedom principles
+
+118
+00:05:55,020 --> 00:05:58,490
+and they think that this is being a very high contribution to Free Software in general
+
+119
+00:05:58,490 --> 00:06:00,490
+so we've set some sort of very high bar
+
+120
+00:06:00,490 --> 00:06:02,490
+to decide when something is free or not.
+
+121
+00:06:02,490 --> 00:06:08,220
+When people need to decide if some software is free or if some license
+
+122
+00:06:08,300 --> 00:06:10,150
+should be considered Free Software or not
+
+123
+00:06:10,150 --> 00:06:12,450
+they go basically to three entities:
+
+124
+00:06:12,450 --> 00:06:14,050
+they go to the Free Software Foundation,
+
+125
+00:06:14,050 --> 00:06:15,470
+they go to the OSI,
+
+126
+00:06:15,470 --> 00:06:16,290
+they go to Debian
+
+127
+00:06:16,290 --> 00:06:18,750
+and they see if that license is considered free
+
+128
+00:06:18,750 --> 00:06:20,750
+by those people. And we are one of them.
+
+129
+00:06:20,750 --> 00:06:25,550
+So first point, which I think is determining what we do in Debian, is freedom. Software freedom.
+
+130
+00:06:25,550 --> 00:06:29,020
+Second point is a kind of perfectionism
+
+131
+00:06:29,020 --> 00:06:31,020
+which sometimes strikes back on us
+
+132
+00:06:31,020 --> 00:06:34,890
+sometimes makes that...
+
+133
+00:06:34,890 --> 00:06:36,850
+it gets in the way of some of our choices
+
+134
+00:06:36,850 --> 00:06:40,570
+but we do have a sort of culture of technical excellence.
+
+135
+00:06:40,570 --> 00:06:46,000
+We have the Policy, which is where we have codified our quality needs for packages;
+
+136
+00:06:46,000 --> 00:06:49,120
+we have a huge amount of testing: we have Lintian, we have Piuparts;
+
+137
+00:06:49,140 --> 00:06:52,620
+we have automatic testing to see that packages matches our Policy;
+
+138
+00:06:52,620 --> 00:06:55,850
+we have maintainers who are software experts.
+
+139
+00:06:55,850 --> 00:07:01,680
+We try to discourage people to maintain software in Debian if they only know about packaging
+
+140
+00:07:01,680 --> 00:07:04,950
+we try to encourage people to maintain software they use
+
+141
+00:07:04,950 --> 00:07:06,590
+and software of which they are experts
+
+142
+00:07:06,590 --> 00:07:09,000
+and this is huge in terms of users support.
+
+143
+00:07:09,000 --> 00:07:10,750
+So when a user comes to us
+
+144
+00:07:10,750 --> 00:07:12,650
+comes to the respective maintainer of some software in Debian,
+
+145
+00:07:12,650 --> 00:07:16,710
+usually he find someone that knows about that specific piece of software.
+
+146
+00:07:16,710 --> 00:07:18,710
+This, for us, is quality.
+
+147
+00:07:18,710 --> 00:07:24,660
+We have packages that are all up to the same quality requirements
+
+148
+00:07:24,660 --> 00:07:28,020
+and there are no packages... there is no distinction in the Debian archive that says
+
+149
+00:07:28,020 --> 00:07:31,490
+"we try to have this quality requirements for one part of the archive
+
+150
+00:07:31,490 --> 00:07:33,490
+and a different one for another part of the archive".
+
+151
+00:07:33,490 --> 00:07:36,370
+And also when we say "we release when it's ready"
+
+152
+00:07:36,370 --> 00:07:38,370
+it's our way to say that
+
+153
+00:07:38,370 --> 00:07:41,900
+we know we cannot commit yet to a specific date
+
+154
+00:07:41,900 --> 00:07:45,640
+because we fear finding issues, quality issues, just before that release date
+
+155
+00:07:45,640 --> 00:07:48,790
+and we fear compromising our release quality for that specific date.
+
+156
+00:07:48,790 --> 00:07:50,790
+So when we say "we release when it's ready"
+
+157
+00:07:50,790 --> 00:07:52,790
+is also a matter of quality.
+
+158
+00:07:52,790 --> 00:07:56,950
+Third point, and something important for what I'm going to tell you next,
+
+159
+00:07:56,950 --> 00:07:58,200
+is independence.
+
+160
+00:07:58,200 --> 00:08:03,680
+If you look around at the ecosystem of distributions out there
+
+161
+00:08:03,680 --> 00:08:06,850
+you won't find many distributions where
+
+162
+00:08:06,850 --> 00:08:09,740
+you cannot pinpoint a company that is backing the distribution.
+
+163
+00:08:09,740 --> 00:08:13,220
+Among the big distribution, we are one of the very few
+
+164
+00:08:13,220 --> 00:08:16,250
+that is completely run on a volunteer basis
+
+165
+00:08:16,250 --> 00:08:20,560
+that have no corporate or some sort of hierarchical structure
+
+166
+00:08:20,560 --> 00:08:23,200
+where the decisions come from top down.
+
+167
+00:08:23,200 --> 00:08:25,530
+We have no single company babysitting us
+
+168
+00:08:25,530 --> 00:08:28,280
+and we essentially live up to donations,
+
+169
+00:08:28,280 --> 00:08:31,040
+in terms of time, so volunteers contributing time to Debian
+
+170
+00:08:31,040 --> 00:08:33,040
+and donations in terms of money.
+
+171
+00:08:33,040 --> 00:08:35,040
+This is very remarkable
+
+172
+00:08:35,040 --> 00:08:38,120
+in the ecosystem of today, especially in Free Software distributions.
+
+173
+00:08:38,120 --> 00:08:42,000
+And once more we have a phenomenon of community awareness:
+
+174
+00:08:42,000 --> 00:08:46,020
+our community seems to trust that, due to this independence of us,
+
+175
+00:08:46,020 --> 00:08:50,180
+decisions in Debian won't be taken due to some profit reasons
+
+176
+00:08:50,180 --> 00:08:52,700
+or other kind of reasons than our own core values.
+
+177
+00:08:52,700 --> 00:08:58,100
+So, independence is another very important value, for me, that motivates me to contribute to Debian.
+
+178
+00:08:58,300 --> 00:09:00,750
+And then, we have decision making.
+
+179
+00:09:00,750 --> 00:09:07,490
+Decision making is something that is very well codified in our Constitution.
+
+180
+00:09:07,490 --> 00:09:10,910
+The basic rule, which I started to call a while ago do-ocracy
+
+181
+00:09:10,910 --> 00:09:14,950
+- actually I picked it up from someone but I don't remember from whom I did pick it up,
+
+182
+00:09:14,950 --> 00:09:16,510
+but it seems to be sticking around -
+
+183
+00:09:16,510 --> 00:09:20,590
+essentially it says that if someone is responsible to do some kind of work in Debian,
+
+184
+00:09:20,590 --> 00:09:24,090
+as long as is doing that work, well, they decide how to do it.
+
+185
+00:09:24,090 --> 00:09:27,510
+Nobody can go there and say: "you need to do that work in that way",
+
+186
+00:09:27,510 --> 00:09:28,570
+unless
+
+187
+00:09:28,570 --> 00:09:30,570
+they are ready to commit and do the work themselves.
+
+188
+00:09:30,570 --> 00:09:32,570
+And this is the default rule.
+
+189
+00:09:32,570 --> 00:09:35,900
+All decisions in Debian, by default, are taken this way
+
+190
+00:09:35,900 --> 00:09:37,770
+and then we have also democracy:
+
+191
+00:09:37,770 --> 00:09:42,250
+we have come to some kind of potential correction on how we take decisions.
+
+192
+00:09:42,270 --> 00:09:44,790
+So we are allowed to take decisions all together,
+
+193
+00:09:44,790 --> 00:09:47,030
+in a democratic way, voting on stuff.
+
+194
+00:09:47,030 --> 00:09:52,290
+We are wise enough to that only, and in general, for political reasons
+
+195
+00:09:52,290 --> 00:09:53,470
+and for philosophical reasons
+
+196
+00:09:53,470 --> 00:09:56,330
+we try not to do that for technical reasons
+
+197
+00:09:56,330 --> 00:09:58,840
+but we can do that even for technical reasons.
+
+198
+00:09:58,840 --> 00:10:00,330
+So we try to use this
+
+199
+00:10:00,330 --> 00:10:04,110
+as some sort of way to make the default way of taking decisions works.
+
+200
+00:10:04,110 --> 00:10:06,050
+And what this means?
+
+201
+00:10:06,050 --> 00:10:10,270
+This means that is very easy to have an impact on Debian
+
+202
+00:10:10,270 --> 00:10:14,020
+if you know how to do something in Debian, and nobody is doing that,
+
+203
+00:10:14,020 --> 00:10:16,020
+you can pick it up
+
+204
+00:10:16,020 --> 00:10:19,280
+and if you start doing it, you will decide how to do that.
+
+205
+00:10:19,280 --> 00:10:24,300
+So, this is why is very is to have an impact on Debian thanks to the way we take decisions
+
+206
+00:10:24,300 --> 00:10:27,420
+but it also means that the reputation in the project follows work
+
+207
+00:10:27,420 --> 00:10:31,780
+if you have a good reputation in the project is usually because you've done a lot of work
+
+208
+00:10:31,780 --> 00:10:33,780
+and a lot of very high quality work.
+
+209
+00:10:33,780 --> 00:10:38,340
+And finally, once more, it means that there are not imposed decisions
+
+210
+00:10:38,340 --> 00:10:41,410
+it's not like the people who own the infrastructure
+
+211
+00:10:41,410 --> 00:10:42,660
+or who employ people
+
+212
+00:10:42,660 --> 00:10:44,820
+can decide how decisions are made
+
+213
+00:10:44,820 --> 00:10:46,820
+decisions are made this way.
+
+214
+00:10:46,820 --> 00:10:50,060
+And last point,
+
+215
+00:10:50,060 --> 00:10:53,300
+we've ended up being as some sort of root
+
+216
+00:10:53,300 --> 00:10:55,300
+of a huge ecosystem of derivatives.
+
+217
+00:10:55,300 --> 00:10:58,300
+I believe you all know what derivatives is about:
+
+218
+00:10:58,300 --> 00:10:59,860
+you take an existent distribution,
+
+219
+00:10:59,860 --> 00:11:01,320
+you start compiling packages,
+
+220
+00:11:01,320 --> 00:11:03,320
+you add your own packages, you change stuff
+
+221
+00:11:03,320 --> 00:11:05,480
+and you obtain a completely new distribution.
+
+222
+00:11:05,480 --> 00:11:07,920
+This is something that started to happen in the last
+
+223
+00:11:07,920 --> 00:11:09,920
+- started to happen massively -
+
+224
+00:11:09,920 --> 00:11:11,920
+in the last - let's say - ten years
+
+225
+00:11:11,920 --> 00:11:16,260
+and that really changed the way in which distribution products are made.
+
+226
+00:11:16,260 --> 00:11:19,730
+Derivatives can focus on customization
+
+227
+00:11:19,730 --> 00:11:23,180
+and benefit from all of the work that is done by their mother distribution
+
+228
+00:11:23,180 --> 00:11:26,360
+and Debian ended up being at root at something like
+
+229
+00:11:26,360 --> 00:11:28,470
+140 active distributions
+
+230
+00:11:28,470 --> 00:11:30,470
+according to distrowatch.
+
+231
+00:11:30,470 --> 00:11:33,430
+That means that the work we do in Debian
+
+232
+00:11:33,430 --> 00:11:37,750
+is not only relevant for our own - let's say - "direct" users,
+
+233
+00:11:37,750 --> 00:11:41,300
+is useful for the users of all this sort of distributions
+
+234
+00:11:41,300 --> 00:11:44,180
+which include the most popular distributions out there.
+
+235
+00:11:44,180 --> 00:11:51,400
+People out there, even if they do not know, rely a lot on the work which is done in Debian
+
+236
+00:11:51,400 --> 00:11:53,400
+and I think that this is great.
+
+237
+00:11:53,400 --> 00:12:01,000
+All in all, my point here is that Debian has a very important role to play
+
+238
+00:12:01,000 --> 00:12:03,600
+in the Free Software ecosystem in general
+
+239
+00:12:03,600 --> 00:12:07,960
+and if we fail at doing what we are supposed to do
+
+240
+00:12:07,960 --> 00:12:10,840
+not only the direct users of Debian will fail.
+
+241
+00:12:10,840 --> 00:12:16,420
+I think Free Software in general will suffer from a failure in Debian on delivering what we are about.
+
+242
+00:12:16,420 --> 00:12:19,000
+So the question is:
+
+243
+00:12:19,000 --> 00:12:23,710
+are we up to what we are supposed to do in Free Software in general?
+
+244
+00:12:23,710 --> 00:12:28,750
+And I've seen some challenges that I would like to discuss with you.
+
+245
+00:12:28,750 --> 00:12:32,930
+The first challenge is staying healthy
+
+246
+00:12:33,030 --> 00:12:34,680
+and staying healthy
+
+247
+00:12:34,680 --> 00:12:38,410
+for a Free Software project, for a volunteer Free Software project, essentially means
+
+248
+00:12:38,410 --> 00:12:41,650
+being able to recruit people
+
+249
+00:12:41,650 --> 00:12:45,860
+to find new volunteers that year after year join the project
+
+250
+00:12:45,860 --> 00:12:50,270
+and if you have heard me talking at DebConf on the past two years
+
+251
+00:12:50,270 --> 00:12:53,320
+or in general to the Debian developers public
+
+252
+00:12:53,320 --> 00:12:56,360
+we have always discussed the lack of manpower
+
+253
+00:12:56,360 --> 00:12:58,360
+as a major problem in the project:
+
+254
+00:12:58,360 --> 00:13:01,620
+we cannot do stuff because we have a lack of manpower.
+
+255
+00:13:01,620 --> 00:13:05,390
+In fact I've looked up the data
+
+256
+00:13:05,390 --> 00:13:09,700
+and our recruitment, if we can call it this way, is going very well.
+
+257
+00:13:09,700 --> 00:13:13,240
+Over the past two years
+
+258
+00:13:13,240 --> 00:13:15,480
+we have had thirty new DDs
+
+259
+00:13:15,480 --> 00:13:18,560
+more every single year
+
+260
+00:13:18,560 --> 00:13:21,730
+this is net in the sense that this is an actual increase on the number of DD
+
+261
+00:13:21,730 --> 00:13:26,920
+I have already discounted the number of DDs that dropped off the project
+
+262
+00:13:26,920 --> 00:13:29,050
+because of some sort of natural turnover.
+
+263
+00:13:29,050 --> 00:13:31,990
+Thirty DDs per year is quite a lot.
+
+264
+00:13:31,990 --> 00:13:34,790
+And if we look at maintainers, Debian Maintainers,
+
+265
+00:13:34,790 --> 00:13:37,770
+we have something like fifty new Debian Maintainers per year
+
+266
+00:13:37,770 --> 00:13:40,390
+this is gross because I didn't find the actual net data
+
+267
+00:13:40,390 --> 00:13:44,990
+but it still give an idea that we do, we are able to recruit people
+
+268
+00:13:44,990 --> 00:13:46,990
+both to work on Debian in general
+
+269
+00:13:46,990 --> 00:13:47,860
+- whatever the task -
+
+270
+00:13:47,860 --> 00:13:50,280
+and to work on specific packages in the archive.
+
+271
+00:13:50,280 --> 00:13:56,950
+I think we should really stop using the lack of manpower as an excuse
+
+272
+00:13:56,950 --> 00:14:01,310
+we are a volunteer project: we will always lack manpower to do something
+
+273
+00:14:01,310 --> 00:14:04,300
+but our ability to recruit new people is doing well
+
+274
+00:14:04,300 --> 00:14:06,300
+is doing very well.
+
+275
+00:14:06,300 --> 00:14:12,120
+What we really need to do is to actually better use the manpower that we do have
+
+276
+00:14:12,120 --> 00:14:14,590
+and, in particular, I'm worried about
+
+277
+00:14:14,590 --> 00:14:17,880
+the barriers for contribution that exist within the Debian Project.
+
+278
+00:14:17,880 --> 00:14:21,250
+One thing we discuss often is
+
+279
+00:14:21,250 --> 00:14:25,400
+we don't need people to maintain yet another package in the Debian archive
+
+280
+00:14:25,400 --> 00:14:29,190
+what we need is people working on some of the core teams
+
+281
+00:14:29,190 --> 00:14:33,010
+the infrastructure teams or maintaining the very important packages in the archive.
+
+282
+00:14:33,010 --> 00:14:36,160
+But the key to make that work
+
+283
+00:14:36,160 --> 00:14:40,010
+is to make it easier for people to contribute to those teams.
+
+284
+00:14:40,010 --> 00:14:43,650
+We have a lot of services in Debian which are very difficult to contribute to
+
+285
+00:14:43,650 --> 00:14:45,580
+we have services which are online
+
+286
+00:14:45,580 --> 00:14:49,420
+which have no mentions of where is the code behind those services
+
+287
+00:14:49,420 --> 00:14:51,840
+of where to report bugs for those services.
+
+288
+00:14:51,840 --> 00:14:55,130
+These are all small attentions we could use
+
+289
+00:14:55,130 --> 00:14:57,820
+to make it easier to contribute within the Debian Project
+
+290
+00:14:57,820 --> 00:15:01,990
+and if someone starts working on some leaf package in the archive
+
+291
+00:15:01,990 --> 00:15:05,330
+and if he find easier to contribute to some more important stuff
+
+292
+00:15:05,330 --> 00:15:06,590
+they will do that.
+
+293
+00:15:06,590 --> 00:15:10,700
+In fact that's how I think most of us that got involved in the Debian Project
+
+294
+00:15:10,700 --> 00:15:13,240
+ended up doing more and more important stuff
+
+295
+00:15:13,240 --> 00:15:16,360
+starting from the easy part and climbing up at bit
+
+296
+00:15:16,360 --> 00:15:18,360
+doing the more complex stuff.
+
+297
+00:15:18,360 --> 00:15:23,410
+So, if you are working on something within the Debian Project
+
+298
+00:15:23,410 --> 00:15:25,950
+in addition to think at the work you're doing
+
+299
+00:15:25,950 --> 00:15:29,010
+please think at "how can I make it easier
+
+300
+00:15:29,010 --> 00:15:31,010
+for others to contribute to this?"
+
+301
+00:15:31,010 --> 00:15:33,820
+"have I documented how to contribute to this?"
+
+302
+00:15:33,820 --> 00:15:37,720
+"have I put a link of where is the source code of this thing I maintain in Debian?"
+
+303
+00:15:37,880 --> 00:15:41,430
+"have I mentioned who should they contact for a project?"
+
+304
+00:15:41,430 --> 00:15:42,750
+all this kind of questions.
+
+305
+00:15:42,750 --> 00:15:46,870
+This is what will help in better using the manpower we have in Debian.
+
+306
+00:15:46,870 --> 00:15:50,800
+And another one, and someone will probably kill me for this,
+
+307
+00:15:50,800 --> 00:15:53,360
+is diversity in various senses.
+
+308
+00:15:53,360 --> 00:15:57,090
+I think we've realized
+
+309
+00:15:57,090 --> 00:15:59,670
+that to do an operating system like Debian
+
+310
+00:15:59,670 --> 00:16:01,670
+we need a lot of skills:
+
+311
+00:16:01,670 --> 00:16:03,410
+packaging is not enough,
+
+312
+00:16:03,410 --> 00:16:05,410
+packaging is one piece in the puzzle
+
+313
+00:16:05,410 --> 00:16:07,060
+but we need a lot of other stuff.
+
+314
+00:16:07,060 --> 00:16:08,310
+We need translations,
+
+315
+00:16:08,310 --> 00:16:09,700
+we need people doing artwork,
+
+316
+00:16:09,700 --> 00:16:11,370
+we need system administrators,
+
+317
+00:16:11,370 --> 00:16:12,310
+we need porters,
+
+318
+00:16:12,310 --> 00:16:14,310
+and all this kind of skills are quite different,
+
+319
+00:16:14,310 --> 00:16:16,030
+we need software developers,
+
+320
+00:16:16,030 --> 00:16:20,300
+and good packagers are not necessarily good software developers and vice versa.
+
+321
+00:16:20,330 --> 00:16:22,820
+We need a whole lot of different skills
+
+322
+00:16:22,820 --> 00:16:28,260
+and we do should not think that packagers are good at doing all of it
+
+323
+00:16:28,260 --> 00:16:30,850
+it is not the case: the skills needed are very different.
+
+324
+00:16:30,850 --> 00:16:35,650
+This is one reason why I think diversity is good
+
+325
+00:16:35,650 --> 00:16:37,000
+for a project like Debian
+
+326
+00:16:37,000 --> 00:16:41,020
+but I think it's good also for the discussion culture in Debian:
+
+327
+00:16:41,020 --> 00:16:44,450
+if you know that in a discussion place
+
+328
+00:16:44,450 --> 00:16:48,390
+you will find people that have very different backgrounds from yours,
+
+329
+00:16:48,390 --> 00:16:50,390
+very different point of view than yours,
+
+330
+00:16:50,390 --> 00:16:55,730
+then you need to be more cautious about how you write things
+
+331
+00:16:55,730 --> 00:16:58,410
+you need to make less assumptions when you write things
+
+332
+00:16:58,410 --> 00:17:00,590
+so having a more diverse project
+
+333
+00:17:00,590 --> 00:17:04,150
+actually helps also in having a better discussion culture.
+
+334
+00:17:04,150 --> 00:17:07,710
+This is the second reason why I think diversity is good for Debian.
+
+335
+00:17:07,710 --> 00:17:11,250
+We've done a lot in the past few years
+
+336
+00:17:11,250 --> 00:17:14,730
+we've sort of fixed the membership process
+
+337
+00:17:16,150 --> 00:17:21,540
+making it clear that we do welcome people with a wide range of skills joining Debian
+
+338
+00:17:21,540 --> 00:17:21,560
+
+339
+00:17:21,560 --> 00:17:26,520
+and we have also, more recently, fixed the nm.debian.org website
+
+340
+00:17:26,520 --> 00:17:29,030
+to make it clear... to avoid implicit assumptions
+
+341
+00:17:29,030 --> 00:17:31,780
+that there are only packagers that we welcome.
+
+342
+00:17:31,780 --> 00:17:33,780
+This is great, we've done that.
+
+343
+00:17:33,780 --> 00:17:37,700
+But as Christian mentioned in the previous talk, stealing my argument
+
+344
+00:17:37,700 --> 00:17:39,880
+we are not doing very well
+
+345
+00:17:39,880 --> 00:17:43,220
+at attracting people who do stuff other than packaging:
+
+346
+00:17:43,220 --> 00:17:46,920
+in two years we've attracted only five people
+
+347
+00:17:46,920 --> 00:17:49,930
+in this so called "non-uploading" DD category,
+
+348
+00:17:49,930 --> 00:17:54,580
+only five people decided to join Debian as a project members
+
+349
+00:17:54,580 --> 00:17:55,880
+and said
+
+350
+00:17:55,880 --> 00:17:57,730
+"you know, I don't really care about packaging
+
+351
+00:17:57,730 --> 00:17:59,610
+I want to do something else in the Debian Project
+
+352
+00:17:59,610 --> 00:18:02,490
+and I commit to do that on a longer basis
+
+353
+00:18:02,490 --> 00:18:06,940
+but I do understand the values of the Debian Project and I'm ready to uphold them".
+
+354
+00:18:06,940 --> 00:18:10,140
+Only five is a bit ... it's quite a few
+
+355
+00:18:10,140 --> 00:18:11,990
+sorry, it's not too much.
+
+356
+00:18:11,990 --> 00:18:15,580
+We really need to understand how to invite
+
+357
+00:18:15,580 --> 00:18:17,580
+people with different backgrounds than packaging
+
+358
+00:18:17,580 --> 00:18:18,600
+to join the Debian Project.
+
+359
+00:18:18,600 --> 00:18:21,370
+I think that diversity statement we sent out
+
+360
+00:18:21,370 --> 00:18:23,910
+is a step in the right direction, but we need to do more:
+
+361
+00:18:23,910 --> 00:18:27,400
+I don't know what exactly, but we really need to do more to attract those
+kind of people.
+
+362
+00:18:30,530 --> 00:18:33,750
+Some other challenges are related to the release process.
+
+363
+00:18:33,890 --> 00:18:36,910
+I'm still amazed that people on the net
+
+364
+00:18:36,910 --> 00:18:40,530
+still complain that Debian has unpredictable release cycles:
+
+365
+00:18:40,530 --> 00:18:43,790
+the other day I replied on Linux Weekly News to someone who was complaining
+
+366
+00:18:43,790 --> 00:18:46,500
+that Sarge has been very much delayed as release.
+
+367
+00:18:46,500 --> 00:18:48,060
+Yes, that's true:
+
+368
+00:18:48,060 --> 00:18:50,060
+Sarge has been a delayed release,
+
+369
+00:18:50,060 --> 00:18:51,170
+like three years or something
+
+370
+00:18:51,170 --> 00:18:54,930
+but it is something which happened seven years ago.
+
+371
+00:18:54,930 --> 00:18:57,190
+Even in the time frame of Debian, that's a lot,
+
+372
+00:18:57,190 --> 00:18:59,430
+that's one third of our time in existence.
+
+373
+00:18:59,430 --> 00:19:02,170
+Since then we have learned:
+
+374
+00:19:02,170 --> 00:19:04,170
+the release cycle of Etch
+
+375
+00:19:04,170 --> 00:19:05,610
+took 22 months,
+
+376
+00:19:05,610 --> 00:19:07,610
+same for the release cycle of Lenny.
+
+377
+00:19:07,610 --> 00:19:10,720
+The release cycle of Squeeze took 24 months.
+
+378
+00:19:10,720 --> 00:19:14,750
+All of these look pretty much predictable to me.
+
+379
+00:19:14,750 --> 00:19:16,750
+I think we are doing well on that front
+
+380
+00:19:17,250 --> 00:19:18,750
+and starting with Wheezy,
+
+381
+00:19:18,750 --> 00:19:19,120
+
+382
+00:19:19,120 --> 00:19:21,600
+for the first time in our history,
+
+383
+00:19:21,600 --> 00:19:23,600
+we've done time based freezes.
+
+384
+00:19:23,600 --> 00:19:26,260
+You probably know that I'm a huge fan of that
+
+385
+00:19:26,260 --> 00:19:28,070
+not all of us agree with that
+
+386
+00:19:28,070 --> 00:19:30,580
+but I think that is a huge step forward
+
+387
+00:19:30,580 --> 00:19:34,840
+because it helps developers in planning ahead changes.
+
+388
+00:19:35,680 --> 00:19:38,890
+Yes, there are people that will upload the last minute no matter what,
+
+389
+00:19:38,890 --> 00:19:39,710
+I understand that,
+
+390
+00:19:39,710 --> 00:19:42,240
+but for all the people who want to plan ahead
+
+391
+00:19:42,240 --> 00:19:43,400
+that's a huge help.
+
+392
+00:19:43,400 --> 00:19:46,320
+And it also helps our upstreams:
+
+393
+00:19:46,320 --> 00:19:48,530
+there are upstreams out there
+
+394
+00:19:48,530 --> 00:19:53,530
+who very much care about the version of their packages that will end up
+
+395
+00:19:53,530 --> 00:19:54,950
+in a stable Debian release.
+
+396
+00:19:54,950 --> 00:19:58,240
+There are people out there that if they know we freeze on a specific date
+
+397
+00:19:58,240 --> 00:20:01,710
+they will commit to give long term support for that software.
+
+398
+00:20:01,710 --> 00:20:05,810
+So knowing a freeze date in advance is a huge help for them.
+
+399
+00:20:05,810 --> 00:20:09,880
+I think we should keep this in mind,
+
+400
+00:20:09,880 --> 00:20:13,560
+keep in mind what was not working with the previous model,
+
+401
+00:20:13,590 --> 00:20:16,780
+like people getting upset of abort freeze
+
+402
+00:20:16,780 --> 00:20:19,390
+without knowing in advance when they were going happen.
+
+403
+00:20:19,390 --> 00:20:22,590
+And I think we should try to not forget this
+
+404
+00:20:22,590 --> 00:20:27,180
+aim in the future at reliably freezing every x months.
+
+405
+00:20:27,180 --> 00:20:28,610
+24? Maybe.
+
+406
+00:20:28,610 --> 00:20:30,300
+More than that?
+
+407
+00:20:30,300 --> 00:20:32,300
+Fewer than that? I don't know.
+
+408
+00:20:32,300 --> 00:20:36,010
+But I think we should try to keep this in mind and maintain that in the
+future.
+
+409
+00:20:36,530 --> 00:20:38,390
+And in case you didn't notice:
+
+410
+00:20:39,060 --> 00:20:40,390
+Wheezy is frozen!
+
+411
+00:20:41,330 --> 00:20:44,710
+And we did this with a time based freeze.
+
+412
+00:20:44,710 --> 00:20:45,760
+I think it worked well
+
+413
+00:20:45,760 --> 00:20:47,760
+but there is still a lot of work to do
+
+414
+00:20:48,380 --> 00:20:49,760
+and in particular
+
+415
+00:20:50,330 --> 00:20:52,240
+we have frozen with something like
+
+416
+00:20:52,240 --> 00:20:57,000
+135 more RC-bugs with respect to the previous stable release.
+
+417
+00:20:57,000 --> 00:21:00,350
+There is a lot of work to do for all of us.
+
+418
+00:21:02,450 --> 00:21:04,870
+In this work which is ahead of us
+
+419
+00:21:04,870 --> 00:21:08,600
+I think we should really aim to have a short freeze period
+
+420
+00:21:09,780 --> 00:21:12,350
+that's something we should aim to.
+
+421
+00:21:12,980 --> 00:21:15,830
+It will happen or it will not happen it depends on us,
+
+422
+00:21:15,830 --> 00:21:17,830
+but I think it should be a goal.
+
+423
+00:21:17,830 --> 00:21:21,900
+It should be a goal because it will show us that
+
+424
+00:21:22,470 --> 00:21:24,710
+time based freeze is a sustainable model
+
+425
+00:21:24,710 --> 00:21:28,620
+even if it means freezing with a bit more bugs than before
+
+426
+00:21:30,090 --> 00:21:32,430
+it will reduce the period of time
+
+427
+00:21:32,430 --> 00:21:34,700
+in which we are bit frustrated
+
+428
+00:21:34,700 --> 00:21:37,510
+in which we cannot do far reaching changes.
+
+429
+00:21:37,510 --> 00:21:40,180
+The shorter we can keep this period
+
+430
+00:21:40,180 --> 00:21:44,400
+it will be better for people who really want to make some more profund
+changes.
+
+431
+00:21:45,320 --> 00:21:46,400
+Asheesh do you have a question?
+
+432
+00:21:47,700 --> 00:21:48,400
+Sorry?
+
+433
+00:21:48,400 --> 00:21:50,400
+Asheesh: How short is good?
+
+434
+00:21:51,760 --> 00:21:53,680
+Stefano: So the question is how short is good.
+
+435
+00:21:53,680 --> 00:21:55,080
+Well, I don't know
+
+436
+00:21:55,080 --> 00:21:57,080
+I think it should be a goal
+
+437
+00:21:57,080 --> 00:21:58,730
+I don't think we can say...
+
+438
+00:21:58,730 --> 00:22:02,450
+Well, I mean, staying within the limits of the past trend
+
+439
+00:22:02,450 --> 00:22:03,720
+like six months
+
+440
+00:22:03,720 --> 00:22:06,450
+I think that's would be good.
+
+441
+00:22:06,450 --> 00:22:07,880
+Better would be shorter than that.
+
+442
+00:22:08,100 --> 00:22:10,540
+But this is not really a question for me, this is more for the release team
+
+443
+00:22:10,540 --> 00:22:12,040
+but I think we should have in mind
+
+444
+00:22:12,040 --> 00:22:14,040
+that we should do all we can
+
+445
+00:22:14,040 --> 00:22:16,040
+to keep that as short as possible.
+
+446
+00:22:16,880 --> 00:22:20,790
+And also there are distributions out there
+
+447
+00:22:20,790 --> 00:22:22,110
+that rely on testing
+
+448
+00:22:22,560 --> 00:22:27,310
+we do have in mind a single product, which is Debian stable
+
+449
+00:22:27,310 --> 00:22:28,670
+which is a great product
+
+450
+00:22:28,670 --> 00:22:30,390
+but, like it or not,
+
+451
+00:22:30,390 --> 00:22:33,570
+people out there are using Debian testing as a product
+
+452
+00:22:34,020 --> 00:22:36,470
+they're using it on their desktop machines,
+
+453
+00:22:36,470 --> 00:22:37,760
+on their development machines
+
+454
+00:22:37,760 --> 00:22:39,260
+because it's kind of
+
+455
+00:22:39,260 --> 00:22:42,020
+the thing that invented rolling distributions out there.
+
+456
+00:22:42,020 --> 00:22:44,020
+And it's a great suite.
+
+457
+00:22:46,280 --> 00:22:47,590
+Keeping it short
+
+458
+00:22:47,590 --> 00:22:49,900
+keeping the release - ehm, sorry - the freeze period short,
+
+459
+00:22:49,900 --> 00:22:53,150
+will also help other people that rely on something like Debian testing.
+
+460
+00:22:55,040 --> 00:22:56,020
+How do we do that?
+
+461
+00:22:57,450 --> 00:23:01,920
+I don't think it's really normal to have that many release critical bugs
+
+462
+00:23:01,920 --> 00:23:03,170
+at the freeze point
+
+463
+00:23:03,170 --> 00:23:06,400
+it means that there are maintainers... it means two things
+
+464
+00:23:06,400 --> 00:23:08,800
+that there are very hard bugs to fix, which is normal,
+
+465
+00:23:08,800 --> 00:23:11,360
+but it also means that there are some maintainers
+
+466
+00:23:11,360 --> 00:23:12,910
+that they kind of neglected their work
+
+467
+00:23:12,910 --> 00:23:16,510
+that they didn't manage to complete to clean up
+
+468
+00:23:16,510 --> 00:23:18,510
+their packages of release critical bugs before the freeze.
+
+469
+00:23:19,350 --> 00:23:20,830
+But it happens
+
+470
+00:23:20,830 --> 00:23:23,440
+we are here, it has happened in the past, it will happen again in the
+future.
+
+471
+00:23:24,100 --> 00:23:27,200
+So the only way I think we have to release at this point
+
+472
+00:23:27,860 --> 00:23:31,840
+is to, once again, keep in mind that releasing
+
+473
+00:23:31,840 --> 00:23:34,820
+is not something that the release team does alone
+
+474
+00:23:35,340 --> 00:23:37,480
+they cannot release Wheezy alone.
+
+475
+00:23:40,320 --> 00:23:43,020
+I've been bothering you with this idea since ever
+
+476
+00:23:43,020 --> 00:23:45,020
+since way before I became the DPL
+
+477
+00:23:45,400 --> 00:23:47,520
+but I think the only solution we have for this
+
+478
+00:23:47,520 --> 00:23:49,130
+is doing NMUs,
+
+479
+00:23:49,560 --> 00:23:50,650
+accepting NMUs,
+
+480
+00:23:50,650 --> 00:23:51,630
+welcoming NMUs,
+
+481
+00:23:51,630 --> 00:23:52,960
+loving NMUs
+
+482
+00:23:53,400 --> 00:23:56,810
+every single day, please, have a look
+
+483
+00:23:56,810 --> 00:23:59,500
+at the list of release critical bugs reports.
+
+484
+00:23:59,500 --> 00:24:02,100
+I look at this graph, essentially, every morning
+
+485
+00:24:02,100 --> 00:24:04,740
+and also after coffee, to see how we are going
+
+486
+00:24:05,360 --> 00:24:07,730
+really, please do the same!
+
+487
+00:24:07,730 --> 00:24:09,580
+Then, please, every day
+
+488
+00:24:09,580 --> 00:24:12,040
+look up if there is a release critical bug you can fix
+
+489
+00:24:12,480 --> 00:24:16,110
+even, and especially, if it is not in your package.
+
+490
+00:24:16,110 --> 00:24:19,520
+There are people, like Gregor - who is somewhere here in the room -
+
+491
+00:24:19,520 --> 00:24:21,300
+that every single day - thanks Gregor -
+
+492
+00:24:21,300 --> 00:24:23,300
+every single day try to do that
+
+493
+00:24:23,470 --> 00:24:25,750
+and publish the initiative to make other do the same
+
+494
+00:24:25,750 --> 00:24:28,280
+he is not the only one, a lot of other people are doing that
+
+495
+00:24:28,280 --> 00:24:30,280
+but also publishing it is very good.
+
+496
+00:24:31,000 --> 00:24:34,320
+And, really, NMUs that fix RC-bugs
+
+497
+00:24:34,320 --> 00:24:35,610
+are free for all
+
+498
+00:24:36,180 --> 00:24:39,330
+do them properly, try to make it clear that you're trying to help
+
+499
+00:24:39,820 --> 00:24:41,900
+the maintainer of the involved package
+
+500
+00:24:41,900 --> 00:24:43,900
+but please: that's the only way
+
+501
+00:24:43,900 --> 00:24:45,900
+we're going to release Wheezy
+
+502
+00:24:45,900 --> 00:24:47,900
+really.
+
+503
+00:24:48,760 --> 00:24:51,060
+And if you want another way of looking at this,
+
+504
+00:24:51,060 --> 00:24:54,910
+it's for the software engineering fan,
+
+505
+00:24:54,910 --> 00:24:56,910
+is collective code ownership.
+
+506
+00:24:56,910 --> 00:24:59,800
+So, collective code ownership is a notion that
+
+507
+00:24:59,800 --> 00:25:03,080
+well, this term comes from extreme programming
+
+508
+00:25:03,080 --> 00:25:05,210
+and essentially says that all programmers
+
+509
+00:25:05,210 --> 00:25:07,210
+have access to all of the code of a project
+
+510
+00:25:07,840 --> 00:25:10,760
+so that no single person can be a bottle neck
+
+511
+00:25:10,760 --> 00:25:12,760
+on a specific part of the project.
+
+512
+00:25:13,160 --> 00:25:16,490
+This is considered good in agile development,
+
+513
+00:25:16,490 --> 00:25:19,480
+this is considered a best practice to follow
+
+514
+00:25:19,480 --> 00:25:21,800
+in open source project management,
+
+515
+00:25:21,800 --> 00:25:25,730
+but in some way it is not always considered good in Debian.
+
+516
+00:25:25,730 --> 00:25:26,980
+Which is kind of weird.
+
+517
+00:25:26,980 --> 00:25:30,380
+In the past we didn't have the notion of maintainer
+
+518
+00:25:30,580 --> 00:25:33,990
+then, Bdale will correct me if I'm wrong, in 1995
+
+519
+00:25:33,990 --> 00:25:34,840
+has been introduced.
+
+520
+00:25:34,840 --> 00:25:37,190
+Is it right? Something like that? Ok thanks.
+
+521
+00:25:37,380 --> 00:25:41,080
+And with that we sort of added some barriers.
+
+522
+00:25:41,350 --> 00:25:44,330
+There are useful stuff behind the notion of maintainer
+
+523
+00:25:44,330 --> 00:25:48,400
+like pride in what you do, being recognized for the work you do
+
+524
+00:25:48,400 --> 00:25:49,280
+which is great.
+
+525
+00:25:49,280 --> 00:25:52,280
+But we should also keep in mind that there are barriers
+
+526
+00:25:52,280 --> 00:25:53,260
+with the notion of maintainer
+
+527
+00:25:53,260 --> 00:25:54,420
+that make it harder
+
+528
+00:25:54,460 --> 00:25:56,850
+for others to contribute to your package.
+
+529
+00:25:56,850 --> 00:25:58,850
+So the best approximation we have
+
+530
+00:25:59,160 --> 00:26:01,090
+to collective code ownership in Debian
+
+531
+00:26:01,380 --> 00:26:05,460
+is essentially being more liberal with NMUs
+
+532
+00:26:05,460 --> 00:26:06,830
+and team maintenance,
+
+533
+00:26:06,830 --> 00:26:10,120
+but we don't have teams which are as large as the Debian Project.
+
+534
+00:26:10,120 --> 00:26:13,550
+So liberal NMUs is really our best approximation
+
+535
+00:26:13,550 --> 00:26:15,550
+for collective code ownership in Debian.
+
+536
+00:26:18,980 --> 00:26:21,570
+And then, moving to the past two,
+
+537
+00:26:21,570 --> 00:26:24,010
+which probably will be a bit more controversial.
+
+538
+00:26:25,560 --> 00:26:28,910
+Low company involvement, I think is becoming a problem in Debian.
+
+539
+00:26:29,750 --> 00:26:33,530
+If you look at other similar project to Debian
+
+540
+00:26:34,230 --> 00:26:37,060
+with the same kind of history and with the same size,
+
+541
+00:26:37,160 --> 00:26:40,500
+you'll see that Debian has less paid work opportunity around
+
+542
+00:26:40,920 --> 00:26:44,090
+and you'll see that we have few companies which are contributing
+directly.
+
+543
+00:26:45,900 --> 00:26:48,040
+Think at the Linux kernel:
+
+544
+00:26:48,040 --> 00:26:51,300
+everyone who can show that can get code in the Linux kernel
+
+545
+00:26:51,300 --> 00:26:53,730
+will find a job in five minutes.
+
+546
+00:26:54,520 --> 00:26:57,980
+We do have companies that will be happy to hire Debian Developers
+
+547
+00:26:57,980 --> 00:27:02,200
+but not as much as you have around a project like the Linux kernel.
+
+548
+00:27:03,280 --> 00:27:06,280
+So, for me, volunteering is great
+
+549
+00:27:06,280 --> 00:27:10,380
+I wouldn't work on Debian on paid time, I would not do that.
+
+550
+00:27:10,380 --> 00:27:13,360
+I work on Free Software for volunteering reasons
+
+551
+00:27:13,360 --> 00:27:16,390
+it matches my view of society where
+
+552
+00:27:16,390 --> 00:27:18,390
+each of us has a work
+
+553
+00:27:18,390 --> 00:27:21,150
+and some extra time, after work,
+
+554
+00:27:21,150 --> 00:27:23,330
+in which he does something to contribute to society
+
+555
+00:27:23,330 --> 00:27:26,010
+so this is not really for me.
+
+556
+00:27:26,010 --> 00:27:28,790
+But I think it could be a problem for Debian in general.
+
+557
+00:27:28,790 --> 00:27:29,990
+Why?
+
+558
+00:27:30,590 --> 00:27:31,990
+We do compete
+
+559
+00:27:31,990 --> 00:27:37,710
+with companies and their full staff - sorry - and their full time
+employees.
+
+560
+00:27:38,710 --> 00:27:41,780
+So, our competitors are commercial distributions
+
+561
+00:27:41,780 --> 00:27:45,970
+with huge means in terms of employees who are working on the distro.
+
+562
+00:27:45,970 --> 00:27:50,790
+That's fine, we don't do Free Software only to make money
+
+563
+00:27:50,790 --> 00:27:53,070
+but we need to watch out for our morale.
+
+564
+00:27:53,070 --> 00:27:55,550
+So, when we start thinking stuff like
+
+565
+00:27:55,550 --> 00:27:57,550
+"Debian is not innovating anymore"
+
+566
+00:27:57,550 --> 00:27:59,870
+"It is other distributions innovating"
+
+567
+00:27:59,870 --> 00:28:01,540
+well, we need to keep in mind that
+
+568
+00:28:01,540 --> 00:28:05,840
+the ratio of forces in the field may not be very well balanced.
+
+569
+00:28:06,300 --> 00:28:10,720
+This is the first problem that I think having low company contributing to
+Debian.
+
+570
+00:28:10,720 --> 00:28:12,930
+Second reason is that
+
+571
+00:28:12,930 --> 00:28:15,570
+there are useful tasks out there
+
+572
+00:28:15,570 --> 00:28:18,160
+that volunteers won't bother doing.
+
+573
+00:28:19,010 --> 00:28:21,350
+I've been asked many many times:
+
+574
+00:28:21,350 --> 00:28:24,940
+"why don't you go to hardware vendors and convince them
+
+575
+00:28:24,940 --> 00:28:26,940
+to pre-install Debian on their machines?"
+
+576
+00:28:27,210 --> 00:28:30,980
+Well, try to find a volunteer that is happy to spend his time
+
+577
+00:28:30,980 --> 00:28:35,150
+in, you know, lobbying hardware producers to install Debian on it.
+
+578
+00:28:35,690 --> 00:28:36,870
+That's an example.
+
+579
+00:28:36,870 --> 00:28:40,070
+Other examples are all sort of certification lobbying:
+
+580
+00:28:40,070 --> 00:28:43,450
+something that very often public administrations ask me
+
+581
+00:28:43,450 --> 00:28:46,470
+is why Debian is not certified for
+
+582
+00:28:46,470 --> 00:28:52,610
+random very high quality corporate database system.
+
+583
+00:28:52,610 --> 00:28:55,790
+Why Debian is not certified for that unnamed system?
+
+584
+00:28:55,790 --> 00:28:58,340
+Well, because you need lobbying to do that,
+
+585
+00:28:58,340 --> 00:29:00,730
+you need people going to the
+
+586
+00:29:01,020 --> 00:29:04,370
+software vendors and convince them to say "Yes, you can run this on
+Debian".
+
+587
+00:29:04,760 --> 00:29:07,210
+Otherwise, there are people out there that won't run Debian.
+
+588
+00:29:07,750 --> 00:29:09,630
+And all sort of other stuff,
+
+589
+00:29:09,630 --> 00:29:12,010
+like creating a sort of networks that makes
+
+590
+00:29:12,010 --> 00:29:17,040
+specific adopters convinced them they will be fine adopting Debian.
+
+591
+00:29:17,530 --> 00:29:21,910
+And the last reason why I think we need a bit more of companies involved in Debian
+
+592
+00:29:21,910 --> 00:29:23,910
+is a sort of disturbing thought.
+
+593
+00:29:23,910 --> 00:29:27,580
+What if only one company or a few companies, for what it's worth
+
+594
+00:29:27,580 --> 00:29:30,430
+end up hiring the whole lot of DDs?
+
+595
+00:29:30,880 --> 00:29:34,820
+The independence I've been babbling around before will be gone.
+
+596
+00:29:35,390 --> 00:29:36,470
+This is not paranoia.
+
+597
+00:29:36,470 --> 00:29:38,780
+This is a kind of problem that has been discussed,
+
+598
+00:29:38,780 --> 00:29:41,240
+for instance, in the Linux kernel community for a long time.
+
+599
+00:29:41,640 --> 00:29:44,920
+They know that they have some sort of independence because they have
+
+600
+00:29:44,920 --> 00:29:46,690
+many different companies
+
+601
+00:29:46,690 --> 00:29:48,690
+with interest in the Linux kernel
+
+602
+00:29:48,690 --> 00:29:50,690
+which sort of balance each other.
+
+603
+00:29:50,690 --> 00:29:54,010
+So if we don't have more companies interested in Debian
+
+604
+00:29:54,010 --> 00:29:56,340
+we'll risk ending up in that situation.
+
+605
+00:29:56,690 --> 00:29:59,990
+Some sort of very early work in progress
+
+606
+00:29:59,990 --> 00:30:02,380
+which I've tried to kick start
+
+607
+00:30:02,380 --> 00:30:04,930
+is a sort of user group, debian-companies,
+
+608
+00:30:04,930 --> 00:30:07,330
+of companies who have some strategic interest in Debian
+
+609
+00:30:07,510 --> 00:30:11,000
+and want to try to work on fixing this problem.
+
+610
+00:30:11,510 --> 00:30:13,000
+They may be other solutions,
+
+611
+00:30:13,000 --> 00:30:15,410
+I don't know, I wanted to present this as problem
+
+612
+00:30:15,410 --> 00:30:17,410
+as I think that in the long run we'll need to think about it.
+
+613
+00:30:18,670 --> 00:30:22,910
+And the last thing is the DPL.
+
+614
+00:30:22,910 --> 00:30:25,170
+Which happens to be me at the moment.
+
+615
+00:30:25,170 --> 00:30:27,800
+What does the DPL do for you?
+
+616
+00:30:28,620 --> 00:30:30,760
+According to my family possibly too much
+
+617
+00:30:30,760 --> 00:30:32,760
+but that's a separate problem.
+
+618
+00:30:33,250 --> 00:30:35,080
+He does fancy stuff:
+
+619
+00:30:35,080 --> 00:30:38,970
+he goes to conferences, he's all around the world, he's invited to talk about Debian
+
+620
+00:30:38,970 --> 00:30:41,990
+and he has a wikipedia page and all this kind of fancy stuff.
+
+621
+00:30:41,990 --> 00:30:43,780
+But he also has to do
+
+622
+00:30:43,780 --> 00:30:49,650
+all sort of needed but pretty boring, for the average geek, stuff.
+
+623
+00:30:50,100 --> 00:30:51,980
+He has to take care of money:
+
+624
+00:30:51,980 --> 00:30:53,660
+approving reimbursements,
+
+625
+00:30:53,660 --> 00:30:54,950
+buying hardware,
+
+626
+00:30:54,950 --> 00:30:56,950
+DebConf, donations
+
+627
+00:30:56,950 --> 00:30:58,780
+trying to avoid bankruptcy,
+
+628
+00:30:58,780 --> 00:31:00,240
+which is a nice thing to do.
+
+629
+00:31:00,240 --> 00:31:02,240
+And he needs to take care of lawyers.
+
+630
+00:31:02,240 --> 00:31:05,070
+I've never been working with lawyers
+
+631
+00:31:05,070 --> 00:31:07,070
+as much as in the last three years.
+
+632
+00:31:07,070 --> 00:31:10,290
+He takes care of what we do with patents:
+
+633
+00:31:10,290 --> 00:31:11,510
+can we have it in the archive or not,
+
+634
+00:31:11,510 --> 00:31:12,600
+what we do with trademarks,
+
+635
+00:31:12,600 --> 00:31:15,090
+what we do with copyright, for instance,
+
+636
+00:31:15,090 --> 00:31:17,090
+can we relicense the Debian logo
+
+637
+00:31:17,090 --> 00:31:20,100
+without undermining some other asset we have?
+
+638
+00:31:20,100 --> 00:31:21,910
+And legal responsibility:
+
+639
+00:31:21,910 --> 00:31:24,290
+and what if a Debian Developer get a lawsuit?
+
+640
+00:31:24,290 --> 00:31:25,820
+All this sort of stuff,
+
+641
+00:31:25,820 --> 00:31:26,820
+which is useful,
+
+642
+00:31:27,100 --> 00:31:29,290
+because if we now have a bit more
+
+643
+00:31:29,290 --> 00:31:33,350
+- how to say? - enhanced multimedia experience in Debian
+
+644
+00:31:33,350 --> 00:31:35,280
+is also because we take the time
+
+645
+00:31:35,280 --> 00:31:38,860
+to discuss this stuff down with lawyers that are experts in Free
+Software.
+
+646
+00:31:39,050 --> 00:31:41,630
+And he does mediations,
+
+647
+00:31:41,630 --> 00:31:43,260
+and he does reports.
+
+648
+00:31:43,260 --> 00:31:46,280
+How many reports from me have you got in the past three years?
+
+649
+00:31:46,280 --> 00:31:47,660
+Yeah, too many!
+
+650
+00:31:47,660 --> 00:31:49,350
+This is all sort of boring stuff
+
+651
+00:31:49,350 --> 00:31:51,350
+which I think is useful for the project.
+
+652
+00:31:52,350 --> 00:31:57,030
+But then, as it is today, the DPL is a problem.
+
+653
+00:31:57,770 --> 00:32:02,110
+I am a problem, but it's not me, it's the role of DPL who has a problem
+in Debian.
+
+654
+00:32:02,690 --> 00:32:04,680
+It just does not scale.
+
+655
+00:32:05,760 --> 00:32:08,990
+We basically rely on some sort of luck
+
+656
+00:32:08,990 --> 00:32:10,990
+that we will find
+
+657
+00:32:11,490 --> 00:32:15,290
+candidates that will have enough time to do all of this
+
+658
+00:32:15,730 --> 00:32:17,810
+and it's quite a bit of time.
+
+659
+00:32:17,810 --> 00:32:20,750
+I don't know if it's wise to only rely on luck
+
+660
+00:32:20,750 --> 00:32:22,100
+to finding those people
+
+661
+00:32:22,100 --> 00:32:24,100
+over the years forever.
+
+662
+00:32:25,460 --> 00:32:28,640
+Second problem: transparency is very hard.
+
+663
+00:32:29,240 --> 00:32:32,090
+I've tried to... I've worked quite a bit on that:
+
+664
+00:32:32,090 --> 00:32:35,240
+I think I spend like half of my time
+
+665
+00:32:35,240 --> 00:32:36,110
+as DPL
+
+666
+00:32:36,110 --> 00:32:38,260
+in trying to tell you what is going on
+
+667
+00:32:38,260 --> 00:32:40,260
+and only the other half on working on stuff.
+
+668
+00:32:40,260 --> 00:32:42,450
+I've been happy to do that, but is very hard.
+
+669
+00:32:43,270 --> 00:32:45,870
+And as long as I'm talking to myself
+
+670
+00:32:45,870 --> 00:32:50,110
+or replying to inquiries that come to the Leader's mailbox
+
+671
+00:32:50,110 --> 00:32:52,110
+there are some sort of intrinsic limits:
+
+672
+00:32:52,600 --> 00:32:55,310
+if you are in a team with more people
+
+673
+00:32:55,310 --> 00:32:56,490
+you need to discuss things
+
+674
+00:32:56,490 --> 00:32:58,720
+and if you force yourself to discuss things publicly
+
+675
+00:32:58,720 --> 00:33:00,720
+you don't have these intrinsic limits.
+
+676
+00:33:01,160 --> 00:33:05,580
+And the third problem is that there is very little institutional memory.
+
+677
+00:33:06,920 --> 00:33:11,730
+We keep on, essentially, rediscover the job
+
+678
+00:33:11,980 --> 00:33:13,730
+at each DPL change.
+
+679
+00:33:14,660 --> 00:33:17,250
+Yes, I can write a DPL Howto
+
+680
+00:33:17,250 --> 00:33:19,250
+with the help of all past DPLs.
+
+681
+00:33:19,250 --> 00:33:21,920
+We can do that, but things change
+
+682
+00:33:21,920 --> 00:33:24,710
+and essentially the key of the problem is that
+
+683
+00:33:25,170 --> 00:33:28,700
+being the DPL is unlike any other task in the project:
+
+684
+00:33:29,370 --> 00:33:33,720
+it's difficult to know who will be a good DPL before
+
+685
+00:33:33,730 --> 00:33:36,310
+because he or she has never done that before
+
+686
+00:33:36,540 --> 00:33:39,030
+and there is essentially only trial and error.
+
+687
+00:33:39,030 --> 00:33:41,890
+There is very little institutional memory of how to do things.
+
+688
+00:33:44,840 --> 00:33:46,210
+How can we fix this?
+
+689
+00:33:46,410 --> 00:33:48,820
+I've been thinking a lot about this,
+
+690
+00:33:48,820 --> 00:33:52,190
+is one of the reason why I decided to run again for a third term,
+
+691
+00:33:53,340 --> 00:33:55,340
+essentially I think the problem is that
+
+692
+00:33:55,500 --> 00:34:00,620
+the role of the DPL is a relic of the "benevolent dictator" era in the
+Free Software.
+
+693
+00:34:01,230 --> 00:34:03,520
+It made a sense in the past,
+
+694
+00:34:03,630 --> 00:34:08,560
+today projects of the size of Debian are not run in this way
+
+695
+00:34:08,560 --> 00:34:11,310
+not even for only the management part.
+
+696
+00:34:11,810 --> 00:34:16,050
+We do not do the technical part with a benevolent dictator, which is very
+good,
+
+697
+00:34:16,710 --> 00:34:19,530
+but we do that for all the kind of management part.
+
+698
+00:34:20,270 --> 00:34:24,350
+I think the only solution possible here
+
+699
+00:34:24,350 --> 00:34:27,410
+is have some sort of board of directors
+
+700
+00:34:27,410 --> 00:34:29,410
+as other projects have
+
+701
+00:34:29,410 --> 00:34:32,090
+which essentially helps the DPL.
+
+702
+00:34:32,400 --> 00:34:34,440
+The role of the DPL should not disappear.
+
+703
+00:34:34,440 --> 00:34:37,680
+I think we should try to keep this as informal as possible
+
+704
+00:34:37,970 --> 00:34:41,850
+but if we have a group of people that we can call the Debian Board of Directors
+
+705
+00:34:41,850 --> 00:34:44,260
+that can have some sort of turnover
+
+706
+00:34:45,140 --> 00:34:47,620
+to guarantee that there is some institutional memory
+
+707
+00:34:47,620 --> 00:34:50,440
+so they should not be tied to the normal DPL period,
+
+708
+00:34:50,440 --> 00:34:53,900
+otherwise you'd have the problem of institutional memory again,
+
+709
+00:34:53,900 --> 00:34:56,710
+with periodic meetings for transparency
+
+710
+00:34:57,550 --> 00:35:00,360
+and if we do have this
+
+711
+00:35:00,360 --> 00:35:02,670
+you can have the people on this kind of board
+
+712
+00:35:02,670 --> 00:35:06,860
+that help out and show if themselves they will be able to do
+
+713
+00:35:06,860 --> 00:35:08,860
+good DPLs or not.
+
+714
+00:35:08,860 --> 00:35:11,670
+I think this is the only way
+
+715
+00:35:11,670 --> 00:35:13,930
+to make the role of the DPL scalable
+
+716
+00:35:13,930 --> 00:35:18,530
+without changing the nature of what the institution is.
+
+717
+00:35:18,530 --> 00:35:20,910
+And as an interim solution
+
+718
+00:35:20,910 --> 00:35:23,220
+I'm trying to collect a group of DPL helpers
+
+719
+00:35:23,250 --> 00:35:25,980
+you've seen the call for help, thanks to all the people who replied.
+
+720
+00:35:25,980 --> 00:35:28,250
+So what I'm trying to do is to
+
+721
+00:35:28,250 --> 00:35:30,450
+try to see if this kind of things could work.
+
+722
+00:35:31,930 --> 00:35:36,550
+And yet, the DPL will remain.
+
+723
+00:35:36,550 --> 00:35:40,740
+So, given I'm here basically because someone
+
+724
+00:35:40,740 --> 00:35:44,520
+a few years ago started joking about me becoming DPL,
+
+725
+00:35:44,820 --> 00:35:46,740
+well, this is a good occasion for all of you
+
+726
+00:35:46,740 --> 00:35:48,360
+to start think at the next one
+
+727
+00:35:48,360 --> 00:35:49,730
+and maybe start joking with him
+
+728
+00:35:49,730 --> 00:35:52,590
+whether he or she will be happy to candidate the next year.
+
+729
+00:35:54,010 --> 00:35:56,700
+So, thanks a lot
+
+730
+00:35:56,700 --> 00:35:59,310
+it's a pleasure to be here
+
+731
+00:35:59,310 --> 00:36:02,400
+and if you have questions or thoughts I'm available.
+
+732
+00:36:02,400 --> 00:36:03,590
+Thanks
+
+733
+00:36:04,160 --> 00:36:12,720
+[applause]
