@@ -1834,934 +1834,938 @@ sesuatu yang menjadi awalan distro di luar sana.
 
 456
 00:22:42,020 --> 00:22:44,020
-And it's a great suite.
+Dan adalah setelan yang hebat.
 
 457
 00:22:46,280 --> 00:22:47,590
-Keeping it short
+Menjaganya tetap pendek
 
 458
 00:22:47,590 --> 00:22:49,900
-keeping the release - ehm, sorry - the freeze period short,
+menjaga rilis, ehm, maaf - periode beku singkat,
 
 459
 00:22:49,900 --> 00:22:53,150
-will also help other people that rely on something like Debian testing.
+akan juga membantu orang lain yang mengandalkan seperti Debian testing.
 
 460
 00:22:55,040 --> 00:22:56,020
-How do we do that?
+Bagaimana cara kita melakukannya?
 
 461
 00:22:57,450 --> 00:23:01,920
-I don't think it's really normal to have that many release critical bugs
+Saya pikir sangat tidak normal untuk memiliki bug kritikal yang sangat banyak
 
 462
 00:23:01,920 --> 00:23:03,170
-at the freeze point
+pada titik beku
 
 463
 00:23:03,170 --> 00:23:06,400
-it means that there are maintainers... it means two things
+ini berarti terdapat mainteners... ini berarti dua hal
 
 464
 00:23:06,400 --> 00:23:08,800
-that there are very hard bugs to fix, which is normal,
+bahwa terdapat bug yang sangat sulit diperbaiki, yang merupakan normal,
 
 465
 00:23:08,800 --> 00:23:11,360
-but it also means that there are some maintainers
+namun hal ini juga berarti terdapat beberapa maintainer
 
 466
 00:23:11,360 --> 00:23:12,910
+yang menelantarkan pekerjaan mereka
 that they kind of neglected their work
 
 467
 00:23:12,910 --> 00:23:16,510
-that they didn't manage to complete to clean up
+bahwa mereka tidak dapat melengkapi untuk menyelesaikan
 
 468
 00:23:16,510 --> 00:23:18,510
-their packages of release critical bugs before the freeze.
+paket mereka dari rilis bug kritikal sebelum beku.
 
 469
 00:23:19,350 --> 00:23:20,830
-But it happens
+Namun itu terjadi
 
 470
 00:23:20,830 --> 00:23:23,440
-we are here, it has happened in the past, it will happen again in the
-future.
+kita di sini, telah terjadi, dan akan terjadi lagi 
+di masa depan.
 
 471
 00:23:24,100 --> 00:23:27,200
-So the only way I think we have to release at this point
+Jadi satu-satunya cara saya pikir adalah dengan merilis sekarang
 
 472
 00:23:27,860 --> 00:23:31,840
-is to, once again, keep in mind that releasing
+adalah untuk, sekali lagi, perlu diingat bahwa merilis
 
 473
 00:23:31,840 --> 00:23:34,820
-is not something that the release team does alone
+adalah sesuatu yang tidak tim rilis lakukan sendirian
 
 474
 00:23:35,340 --> 00:23:37,480
-they cannot release Wheezy alone.
+mereka tidak dapat merilis Wheezy sendiri.
 
 475
 00:23:40,320 --> 00:23:43,020
-I've been bothering you with this idea since ever
+Saya telah mengganggu Anda dengan ide sejak lama
 
 476
 00:23:43,020 --> 00:23:45,020
-since way before I became the DPL
+sejak saya sebelum menjadi DPL
 
 477
 00:23:45,400 --> 00:23:47,520
-but I think the only solution we have for this
+namun saya pikir solusi satu-satunya yang kita miliki
 
 478
 00:23:47,520 --> 00:23:49,130
-is doing NMUs,
+adalah melakukan NMU,
 
 479
 00:23:49,560 --> 00:23:50,650
-accepting NMUs,
+menerima NMU,
 
 480
 00:23:50,650 --> 00:23:51,630
-welcoming NMUs,
+menyambut NMU,
 
 481
 00:23:51,630 --> 00:23:52,960
-loving NMUs
+mencintai NMU,
 
 482
 00:23:53,400 --> 00:23:56,810
-every single day, please, have a look
+setiap harinya, tolong, perhatikan
 
 483
 00:23:56,810 --> 00:23:59,500
-at the list of release critical bugs reports.
+daftar dari laporan rilis bug kritis.
 
 484
 00:23:59,500 --> 00:24:02,100
-I look at this graph, essentially, every morning
+Saya melihat grafik ini, dasarnya, setiap hari
 
 485
 00:24:02,100 --> 00:24:04,740
-and also after coffee, to see how we are going
+dan juga setelah kopi, untuk melihat ke mana kita menuju
 
 486
 00:24:05,360 --> 00:24:07,730
-really, please do the same!
+sungguh, lakukan hal yang sama!
 
 487
 00:24:07,730 --> 00:24:09,580
-Then, please, every day
+Lalu, tolong, setiap hari
 
 488
 00:24:09,580 --> 00:24:12,040
-look up if there is a release critical bug you can fix
+cari jika terdapat rilis bug kritis yang dapat Anda perbaiki
 
 489
 00:24:12,480 --> 00:24:16,110
-even, and especially, if it is not in your package.
+bahkan dan khususnya, jika tidak di dalam paket Anda.
 
 490
 00:24:16,110 --> 00:24:19,520
-There are people, like Gregor - who is somewhere here in the room -
+Terdapat orang, seperti Gregor - yang entah di mana dalam ruang ini - 
 
 491
 00:24:19,520 --> 00:24:21,300
-that every single day - thanks Gregor -
+yang setiap harinya - terima kasih Gregor - 
 
 492
 00:24:21,300 --> 00:24:23,300
-every single day try to do that
+setiap hari mencoba melakukan hal tersebut
 
 493
 00:24:23,470 --> 00:24:25,750
-and publish the initiative to make other do the same
+dan mempublikasikan inisiatifnya untuk membuat 
+orang lain melakukan hal yang sama
 
 494
 00:24:25,750 --> 00:24:28,280
-he is not the only one, a lot of other people are doing that
+dia bukan satu-satunya, namun banyak orang melakukannya
 
 495
 00:24:28,280 --> 00:24:30,280
-but also publishing it is very good.
+namun mempublikasikan juga hal yang baik.
 
 496
 00:24:31,000 --> 00:24:34,320
-And, really, NMUs that fix RC-bugs
+Dan, sungguh, NMU yang dapat memperbaiki RC-bug
 
 497
 00:24:34,320 --> 00:24:35,610
-are free for all
+bebas untuk semuanya
 
 498
 00:24:36,180 --> 00:24:39,330
-do them properly, try to make it clear that you're trying to help
+lakukan secara layak, coba buat menjadi jelas bahwa Anda mencoba membantu
 
 499
 00:24:39,820 --> 00:24:41,900
-the maintainer of the involved package
+maintainer dari paket yang terlibat
 
 500
 00:24:41,900 --> 00:24:43,900
-but please: that's the only way
+namun tolong: hanya dengan itu caranya
 
 501
 00:24:43,900 --> 00:24:45,900
-we're going to release Wheezy
+kami akan merilis Wheezy
 
 502
 00:24:45,900 --> 00:24:47,900
-really.
+sungguh.
 
 503
 00:24:48,760 --> 00:24:51,060
-And if you want another way of looking at this,
+Dan jika kamu ingin cara lain melihat ini, 
 
 504
 00:24:51,060 --> 00:24:54,910
-it's for the software engineering fan,
+hal ini merupakan fan rekayasa perangkat lunak,
 
 505
 00:24:54,910 --> 00:24:56,910
-is collective code ownership.
+adalah kepemilikan kode kolektif.
 
 506
 00:24:56,910 --> 00:24:59,800
-So, collective code ownership is a notion that
+Jadi, kepemilikan kode kolektif merupakan tanda
 
 507
 00:24:59,800 --> 00:25:03,080
-well, this term comes from extreme programming
+hmm, sesungguhnya istilah ini datang dari pemrograman ekstrim
 
 508
 00:25:03,080 --> 00:25:05,210
-and essentially says that all programmers
+dan dasarnya mengatakan semua pemrogram
 
 509
 00:25:05,210 --> 00:25:07,210
-have access to all of the code of a project
+memiliki akses ke ke semua kode dari proyek
 
 510
 00:25:07,840 --> 00:25:10,760
-so that no single person can be a bottle neck
+sehingga tidak ada satu orang yang dapat menjadi tutup-botol
 
 511
 00:25:10,760 --> 00:25:12,760
-on a specific part of the project.
+dari bagian tertentu dari proyek.
 
 512
 00:25:13,160 --> 00:25:16,490
-This is considered good in agile development,
+Hal ini dipertimbangkan baik dalam pengembangan agile,
 
 513
 00:25:16,490 --> 00:25:19,480
-this is considered a best practice to follow
+dan hal ini diperhitungkan sebagai praktik baik untuk diikuti
 
 514
 00:25:19,480 --> 00:25:21,800
-in open source project management,
+dalam manajemen proyek kode terbuka,
 
 515
 00:25:21,800 --> 00:25:25,730
-but in some way it is not always considered good in Debian.
+namun pada beberapa momen hal ini tidak dianggap baik dalam Debian.
 
 516
 00:25:25,730 --> 00:25:26,980
-Which is kind of weird.
+Yang menjadi semacam aneh.
 
 517
 00:25:26,980 --> 00:25:30,380
-In the past we didn't have the notion of maintainer
+Dulunya, kita tidak memiliki gagasan dari maintainer
 
 518
 00:25:30,580 --> 00:25:33,990
-then, Bdale will correct me if I'm wrong, in 1995
+lalu, Bdale akan mengoreksi saya jika saya salah, di 1995
 
 519
 00:25:33,990 --> 00:25:34,840
-has been introduced.
+telah diperkenalkan.
 
 520
 00:25:34,840 --> 00:25:37,190
-Is it right? Something like that? Ok thanks.
+Apakah betul? Sesuatu seperti itu? Ok terima kasih.
 
 521
 00:25:37,380 --> 00:25:41,080
-And with that we sort of added some barriers.
+Dan dengan kami menambahkan semacam rintangan.
 
 522
 00:25:41,350 --> 00:25:44,330
-There are useful stuff behind the notion of maintainer
+Terdapat barang berharga di belakang gagasan dari maintainer
 
 523
 00:25:44,330 --> 00:25:48,400
-like pride in what you do, being recognized for the work you do
+seperti kebanggaan dari apa yang kamu lakukan, dikenali dari apa yang kamu lakukan
 
 524
 00:25:48,400 --> 00:25:49,280
-which is great.
+yang itu hebat.
 
 525
 00:25:49,280 --> 00:25:52,280
-But we should also keep in mind that there are barriers
+Namun kita perlu ingat juga bahwa rintangan
 
 526
 00:25:52,280 --> 00:25:53,260
-with the notion of maintainer
+yang ada dalam pikiran maintainer
 
 527
 00:25:53,260 --> 00:25:54,420
-that make it harder
+yang membuatnya lebih sulit
 
 528
 00:25:54,460 --> 00:25:56,850
+bagi lainnya untuk berkontribusi pada paket Anda.
 for others to contribute to your package.
 
 529
 00:25:56,850 --> 00:25:58,850
-So the best approximation we have
+Jadi pendekatan terbaik yang kita miliki
 
 530
 00:25:59,160 --> 00:26:01,090
-to collective code ownership in Debian
+adalah kepemilikan kode kolektif dalam Debian
 
 531
 00:26:01,380 --> 00:26:05,460
-is essentially being more liberal with NMUs
+dasarnya lebih liberal dari NMU
 
 532
 00:26:05,460 --> 00:26:06,830
-and team maintenance,
+dan perawatan tim,
 
 533
 00:26:06,830 --> 00:26:10,120
-but we don't have teams which are as large as the Debian Project.
+namun kita tidak memiliki tim yang sebesar Proyek Debian.
 
 534
 00:26:10,120 --> 00:26:13,550
-So liberal NMUs is really our best approximation
+Jadi NMU liberal adalah pendekatan terbaik kami
 
 535
 00:26:13,550 --> 00:26:15,550
-for collective code ownership in Debian.
+untuk kepemilikan kode kolektif dalam Debian.
 
 536
 00:26:18,980 --> 00:26:21,570
-And then, moving to the past two,
+Lalu, berjalan ke masa lalu,
 
 537
 00:26:21,570 --> 00:26:24,010
-which probably will be a bit more controversial.
+yang mungkin akan sedikit kontroversial.
 
 538
 00:26:25,560 --> 00:26:28,910
-Low company involvement, I think is becoming a problem in Debian.
+Keterlibatan perusahaan yang rendah, saya pikir menjadi masalah dalam Debian.
 
 539
 00:26:29,750 --> 00:26:33,530
-If you look at other similar project to Debian
+Jika Anda lihat proyek serupa dengan Debian
 
 540
 00:26:34,230 --> 00:26:37,060
-with the same kind of history and with the same size,
+dengan sejarah yang serupa dan ukuran yang sama,
 
 541
 00:26:37,160 --> 00:26:40,500
-you'll see that Debian has less paid work opportunity around
+Anda akan lihat Debian memiliki pekerjaan dengan peluang kecil dibayar
 
 542
 00:26:40,920 --> 00:26:44,090
-and you'll see that we have few companies which are contributing
-directly.
+dan Anda akan lihat bahwa kita punya beberapa perusahaan yang 
+berkontribusi secara langsung.
 
 543
 00:26:45,900 --> 00:26:48,040
-Think at the Linux kernel:
+Lihat pada kernel Linux: 
 
 544
 00:26:48,040 --> 00:26:51,300
-everyone who can show that can get code in the Linux kernel
+semua yang dapat menunjukkan kode dalam kernel Linux
 
 545
 00:26:51,300 --> 00:26:53,730
-will find a job in five minutes.
+akan menemukan pekerjaan dalam lima menit.
 
 546
 00:26:54,520 --> 00:26:57,980
-We do have companies that will be happy to hire Debian Developers
+Kita memiliki perusahaan yang senang untuk menyewa pengembang Debian
 
 547
 00:26:57,980 --> 00:27:02,200
-but not as much as you have around a project like the Linux kernel.
+namun tidak sebanyak seperti proyek kernel Linux.
 
 548
 00:27:03,280 --> 00:27:06,280
-So, for me, volunteering is great
+Jadi, bagi saya, sukarela itu hebat
 
 549
 00:27:06,280 --> 00:27:10,380
-I wouldn't work on Debian on paid time, I would not do that.
+Saya takkan bekerja untuk Debian pada waktu kerja, Saya takkan lakukan itu.
 
 550
 00:27:10,380 --> 00:27:13,360
-I work on Free Software for volunteering reasons
+Saya bekerja pada Free Software untuk alasan sukarela
 
 551
 00:27:13,360 --> 00:27:16,390
-it matches my view of society where
+ini mencocokkan pandangan saya di mana lingkungan
 
 552
 00:27:16,390 --> 00:27:18,390
-each of us has a work
+setiap dari kita memiliki kerja
 
 553
 00:27:18,390 --> 00:27:21,150
-and some extra time, after work,
+dan waktu berlebih, setelah kerja, 
 
 554
 00:27:21,150 --> 00:27:23,330
-in which he does something to contribute to society
+yang seseorang lakukan untuk berkontribusi ke masyarakat
 
 555
 00:27:23,330 --> 00:27:26,010
-so this is not really for me.
+jadi ini sungguh bukan untuk saya.
 
 556
 00:27:26,010 --> 00:27:28,790
-But I think it could be a problem for Debian in general.
+Namun saya pikir dapat bisa menjadi masalah bagi Debian secara umum.
 
 557
 00:27:28,790 --> 00:27:29,990
-Why?
+Mengapa?
 
 558
 00:27:30,590 --> 00:27:31,990
-We do compete
+Kita berkompetisi
 
 559
 00:27:31,990 --> 00:27:37,710
-with companies and their full staff - sorry - and their full time
-employees.
+dengan perusahaan dan staf - maaf - dan pegawai penuh-waktu mereka
 
 560
 00:27:38,710 --> 00:27:41,780
-So, our competitors are commercial distributions
+Jadi, kompetitor kita adalah distro komersial
 
 561
 00:27:41,780 --> 00:27:45,970
-with huge means in terms of employees who are working on the distro.
+dengan arti besar dalam hal pegawai yang bekerja untuk distro.
 
 562
 00:27:45,970 --> 00:27:50,790
-That's fine, we don't do Free Software only to make money
+Hal ini baik-baik saja, kita tidak hanya melakukan Free Software untuk mencari uang
 
 563
 00:27:50,790 --> 00:27:53,070
-but we need to watch out for our morale.
+tapi kita perlu menjaga nilai moral kita.
 
 564
 00:27:53,070 --> 00:27:55,550
-So, when we start thinking stuff like
+Jadi, saat kita berpikir hal seperti
 
 565
 00:27:55,550 --> 00:27:57,550
-"Debian is not innovating anymore"
+"Debian tidak lagi berinovasi"
 
 566
 00:27:57,550 --> 00:27:59,870
-"It is other distributions innovating"
+"Distro lain yang berinovasi"
 
 567
 00:27:59,870 --> 00:28:01,540
-well, we need to keep in mind that
+kita perlu ingat bahwa
 
 568
 00:28:01,540 --> 00:28:05,840
-the ratio of forces in the field may not be very well balanced.
+perbandingan kekuatan di lapangan bisa jadi sangat tidak seimbang.
 
 569
 00:28:06,300 --> 00:28:10,720
-This is the first problem that I think having low company contributing to
-Debian.
+Ini adalah masalah pertama yang saya pikir akan kecilnya kontribusi 
+perusahaan ke Debian.
 
 570
 00:28:10,720 --> 00:28:12,930
-Second reason is that
+Alasan kedua adalah
 
 571
 00:28:12,930 --> 00:28:15,570
-there are useful tasks out there
+terdapat pekerjaan berguna di luar sana
 
 572
 00:28:15,570 --> 00:28:18,160
-that volunteers won't bother doing.
+yang relawan takkan pusing melakukannya.
 
 573
 00:28:19,010 --> 00:28:21,350
-I've been asked many many times:
+Saya telah ditanyakan sering kali:
 
 574
 00:28:21,350 --> 00:28:24,940
-"why don't you go to hardware vendors and convince them
+"mengapa kamu tidak pergi ke vendor hardware dan yakinkan mereka
 
 575
 00:28:24,940 --> 00:28:26,940
-to pre-install Debian on their machines?"
+untuk melakukan pre-install Debian dalam mesin mereka?"
 
 576
 00:28:27,210 --> 00:28:30,980
-Well, try to find a volunteer that is happy to spend his time
+Hmm. coba cari relawan yang senang meluangkan waktunya
 
 577
 00:28:30,980 --> 00:28:35,150
-in, you know, lobbying hardware producers to install Debian on it.
+untuk melakukan lbi ke produsen perangkat keras untuk meng-install Debian.
 
 578
 00:28:35,690 --> 00:28:36,870
-That's an example.
+Itu adalah contoh.
 
 579
 00:28:36,870 --> 00:28:40,070
-Other examples are all sort of certification lobbying:
+Contoh lainnya adalah segala macam sertifikasi lobi:
 
 580
 00:28:40,070 --> 00:28:43,450
-something that very often public administrations ask me
+sesuatu yang administrasi publik sering tanyakan ke saya
 
 581
 00:28:43,450 --> 00:28:46,470
-is why Debian is not certified for
+mengapa Debian tidak disertifikasi untuk
 
 582
 00:28:46,470 --> 00:28:52,610
-random very high quality corporate database system.
+suatu sistem basisdata korporasi berkualitas tinggi.
 
 583
 00:28:52,610 --> 00:28:55,790
-Why Debian is not certified for that unnamed system?
+Mengapa Debian tidak sertifikasi untuk sistem sesuatu?
 
 584
 00:28:55,790 --> 00:28:58,340
-Well, because you need lobbying to do that,
+Hmm, karena kamu membutuhkan lobi untuk melakukannya,
 
 585
 00:28:58,340 --> 00:29:00,730
-you need people going to the
+Anda butuh orang untuk pergi ke 
 
 586
 00:29:01,020 --> 00:29:04,370
-software vendors and convince them to say "Yes, you can run this on
-Debian".
+vendor perangkat lunak dan yakinkan mereka untuk berkata
+"Ya, Anda dapat menjalankan mesin ini dengan Debian".
 
 587
 00:29:04,760 --> 00:29:07,210
-Otherwise, there are people out there that won't run Debian.
+Jika tidak, akan terdapat orang di luar sana yang takkan menjalankan Debian.
 
 588
 00:29:07,750 --> 00:29:09,630
-And all sort of other stuff,
+Dan semua hal lainnya, 
 
 589
 00:29:09,630 --> 00:29:12,010
-like creating a sort of networks that makes
+seperti menciptakan jaringan yang membuat
 
 590
 00:29:12,010 --> 00:29:17,040
-specific adopters convinced them they will be fine adopting Debian.
+adopter khusus meyakinkan mereka bahwa mereka akan baik-baik saja mengadopsi Debian.
 
 591
 00:29:17,530 --> 00:29:21,910
-And the last reason why I think we need a bit more of companies involved in Debian
+Dan alasan terakhir mengapa saya pikir kita butuh perusahaan lebih banyak 
+terlibat dalam Debian.
 
 592
 00:29:21,910 --> 00:29:23,910
-is a sort of disturbing thought.
+ini pemikiran yang sedikit mengganggu.
 
 593
 00:29:23,910 --> 00:29:27,580
-What if only one company or a few companies, for what it's worth
+Bagaimana jika satu perusahaan atau beberapa perusahaan, untuk senilai tertentu
 
 594
 00:29:27,580 --> 00:29:30,430
-end up hiring the whole lot of DDs?
+berakhir dengan menyewa begitu banyak DD?
 
 595
 00:29:30,880 --> 00:29:34,820
-The independence I've been babbling around before will be gone.
+Kemerdekaan yang telah saya gaungkan sebelumnya akan hilang.
 
 596
 00:29:35,390 --> 00:29:36,470
-This is not paranoia.
+Hal ini bukan paranoia.
 
 597
 00:29:36,470 --> 00:29:38,780
-This is a kind of problem that has been discussed,
+Hal ini merupakan masalah yang telah didiskusikan,
 
 598
 00:29:38,780 --> 00:29:41,240
-for instance, in the Linux kernel community for a long time.
+contohnya, di dalam komunitas kernel Linux sejak lama dulu.
 
 599
 00:29:41,640 --> 00:29:44,920
-They know that they have some sort of independence because they have
+Mereka tahu mereka akan memiliki semacam kebebasan karena mereka punya
 
 600
 00:29:44,920 --> 00:29:46,690
-many different companies
+banyak perusahaan berbeda
 
 601
 00:29:46,690 --> 00:29:48,690
-with interest in the Linux kernel
+dengan kepentingan dalam kernel Linux
 
 602
 00:29:48,690 --> 00:29:50,690
-which sort of balance each other.
+yang mampu mengimbangi satu sama lainnya.
 
 603
 00:29:50,690 --> 00:29:54,010
-So if we don't have more companies interested in Debian
+Jadi jika kita tidak memiliki lebih banyak perusahaan tertarik ke Debian
 
 604
 00:29:54,010 --> 00:29:56,340
-we'll risk ending up in that situation.
+kita akan berakhir dengan risiko tersebut.
 
 605
 00:29:56,690 --> 00:29:59,990
-Some sort of very early work in progress
+Beberapa pekerjaan awal dalam kemajuan
 
 606
 00:29:59,990 --> 00:30:02,380
-which I've tried to kick start
+yang telah saya coba mulai
 
 607
 00:30:02,380 --> 00:30:04,930
-is a sort of user group, debian-companies,
+adalah grup pengguna, debian-companies
 
 608
 00:30:04,930 --> 00:30:07,330
-of companies who have some strategic interest in Debian
+dari perusahaan yang memiliki kepentingan strategis dalam Debian
 
 609
 00:30:07,510 --> 00:30:11,000
-and want to try to work on fixing this problem.
+dan ingin bekerja untuk memperbaiki masalah ini.
 
 610
 00:30:11,510 --> 00:30:13,000
-They may be other solutions,
+Mereka bisa jadi solusi lain, 
 
 611
 00:30:13,000 --> 00:30:15,410
-I don't know, I wanted to present this as problem
+saya tidak tahu, saya ingin menyampaikan ini sebagai masalah
 
 612
 00:30:15,410 --> 00:30:17,410
-as I think that in the long run we'll need to think about it.
+dan saya pikir saya sedang dalam perjalanan jauh yang kita perlu bersiap memikirkannya.
 
 613
 00:30:18,670 --> 00:30:22,910
-And the last thing is the DPL.
+Dan hal terakhir adalah DPL.
 
 614
 00:30:22,910 --> 00:30:25,170
-Which happens to be me at the moment.
+Yang sekarang sedang terjadi.
 
 615
 00:30:25,170 --> 00:30:27,800
-What does the DPL do for you?
+Apa yang DPL lakukan untuk Anda?
 
 616
 00:30:28,620 --> 00:30:30,760
-According to my family possibly too much
+Menurut keluarga saya bisa jadi terlalu banyak
 
 617
 00:30:30,760 --> 00:30:32,760
-but that's a separate problem.
+namun itu masalah yang terpisah.
 
 618
 00:30:33,250 --> 00:30:35,080
-He does fancy stuff:
+Ia melakukan hal menarik:
 
 619
 00:30:35,080 --> 00:30:38,970
-he goes to conferences, he's all around the world, he's invited to talk about Debian
+Ia pergi ke konferensi, keliling dunia, diundang untuk bicara soal Debian
 
 620
 00:30:38,970 --> 00:30:41,990
-and he has a wikipedia page and all this kind of fancy stuff.
+dan dia memiliki halaman wikipedia dan semua hal baik lainnya.
 
 621
 00:30:41,990 --> 00:30:43,780
-But he also has to do
+Namun ia juga harus melakukan
 
 622
 00:30:43,780 --> 00:30:49,650
-all sort of needed but pretty boring, for the average geek, stuff.
+semua hal yang diperlukan namun membosankan, bagi geek kebanyakan.
 
 623
 00:30:50,100 --> 00:30:51,980
-He has to take care of money:
+Ia harus mengatur uang:
 
 624
 00:30:51,980 --> 00:30:53,660
-approving reimbursements,
+menyetujui reimburse,
 
 625
 00:30:53,660 --> 00:30:54,950
-buying hardware,
+membeli perangkat keras,
 
 626
 00:30:54,950 --> 00:30:56,950
-DebConf, donations
+DebConf, donasi
 
 627
 00:30:56,950 --> 00:30:58,780
-trying to avoid bankruptcy,
+mencoba menghindari kebangkrutan,
 
 628
 00:30:58,780 --> 00:31:00,240
-which is a nice thing to do.
+merupakan hal baik untuk dilakukan.
 
 629
 00:31:00,240 --> 00:31:02,240
-And he needs to take care of lawyers.
+Dan dia perlu mengatur pengacara.
 
 630
 00:31:02,240 --> 00:31:05,070
-I've never been working with lawyers
+Saya tidak pernah bekerja dengan pengacara
 
 631
 00:31:05,070 --> 00:31:07,070
-as much as in the last three years.
+sebanyak ini selama tiga tahun belakangan.
 
 632
 00:31:07,070 --> 00:31:10,290
-He takes care of what we do with patents:
+Dia menjaga apa yang kita lakukan dengan paten:
 
 633
 00:31:10,290 --> 00:31:11,510
-can we have it in the archive or not,
+dapatkah kita di dalam arsip atau tidak,
 
 634
 00:31:11,510 --> 00:31:12,600
-what we do with trademarks,
+apa yang kita lakukan dengan trademark,
 
 635
 00:31:12,600 --> 00:31:15,090
-what we do with copyright, for instance,
+apa yang kita lakukan dengan copyright, contohnya,
 
 636
 00:31:15,090 --> 00:31:17,090
-can we relicense the Debian logo
+dapatkah kita me-lisensi ulang logo Debian
 
 637
 00:31:17,090 --> 00:31:20,100
-without undermining some other asset we have?
+tanpa merongrong aset lain yang kita miliki?
 
 638
 00:31:20,100 --> 00:31:21,910
-And legal responsibility:
+Dan tanggung jawabn legal:
 
 639
 00:31:21,910 --> 00:31:24,290
-and what if a Debian Developer get a lawsuit?
+dan bagaimana jika pengembang Debian mendapatkan tuntutan hukum?
 
 640
 00:31:24,290 --> 00:31:25,820
-All this sort of stuff,
+Semua hal ini,
 
 641
 00:31:25,820 --> 00:31:26,820
-which is useful,
+yang berguna,
 
 642
 00:31:27,100 --> 00:31:29,290
-because if we now have a bit more
+karena jika kita memiliki lebih banyak
 
 643
 00:31:29,290 --> 00:31:33,350
-- how to say? - enhanced multimedia experience in Debian
+- bagaimana untuk mengatakannya? - pengalaman multimedia lebih baik dalam Debian
 
 644
 00:31:33,350 --> 00:31:35,280
-is also because we take the time
+juga karena kita mengambil waktu 
 
 645
 00:31:35,280 --> 00:31:38,860
-to discuss this stuff down with lawyers that are experts in Free
-Software.
+untuk berdiskusi hal ini dengan pengacara yang pakar
+dalam Free Software
 
 646
 00:31:39,050 --> 00:31:41,630
-And he does mediations,
+Dan ia melakukan mediasi,
 
 647
 00:31:41,630 --> 00:31:43,260
-and he does reports.
+dan dia melakukan laporan.
 
 648
 00:31:43,260 --> 00:31:46,280
-How many reports from me have you got in the past three years?
+Berapa banyak laporan yang Anda dapatkan dari saya selama 3 tahun ini?
 
 649
 00:31:46,280 --> 00:31:47,660
-Yeah, too many!
+Yeah, terlalu banyak! 
 
 650
 00:31:47,660 --> 00:31:49,350
-This is all sort of boring stuff
+Semua hal ini merupakan hal yang membosankan
 
 651
 00:31:49,350 --> 00:31:51,350
-which I think is useful for the project.
+yang saya pikir berguna untuk proyek.
 
 652
 00:31:52,350 --> 00:31:57,030
-But then, as it is today, the DPL is a problem.
+Namun selanjutnya, seperti hari ini, DPL adalah masalah.
 
 653
 00:31:57,770 --> 00:32:02,110
-I am a problem, but it's not me, it's the role of DPL who has a problem
-in Debian.
+Saya adalah masalah, namun bukan saya, adalah peran dari DPL yang 
+menjadi masalah dalam Debian.
 
 654
 00:32:02,690 --> 00:32:04,680
-It just does not scale.
+Hanya tidak mampu membesar.
 
 655
 00:32:05,760 --> 00:32:08,990
-We basically rely on some sort of luck
+Kami dasarnya mengandalkan pada semacam keberuntungan
 
 656
 00:32:08,990 --> 00:32:10,990
-that we will find
+yang akan kami temukan
 
 657
 00:32:11,490 --> 00:32:15,290
-candidates that will have enough time to do all of this
+kandidat yang memiliki waktu yang cukup untuk melakukan ini semua
 
 658
 00:32:15,730 --> 00:32:17,810
-and it's quite a bit of time.
+dan waktunya yang cukup.
 
 659
 00:32:17,810 --> 00:32:20,750
-I don't know if it's wise to only rely on luck
+Saya tidak tahu apakah bijak hanya mengandalkan keberuntungan
 
 660
 00:32:20,750 --> 00:32:22,100
-to finding those people
+untuk menemukan orang ini
 
 661
 00:32:22,100 --> 00:32:24,100
-over the years forever.
+seterusnya selanjutnya. 
 
 662
 00:32:25,460 --> 00:32:28,640
-Second problem: transparency is very hard.
+Masalah kedua: transparansi sangat sulit.
 
 663
 00:32:29,240 --> 00:32:32,090
-I've tried to... I've worked quite a bit on that:
+Saya telah mencoba... Saya bekerja cukup keras untuk itu:
 
 664
 00:32:32,090 --> 00:32:35,240
+Saya pikir seperti separuh waktu saya
 I think I spend like half of my time
 
 665
 00:32:35,240 --> 00:32:36,110
-as DPL
+sebagai DPL
 
 666
 00:32:36,110 --> 00:32:38,260
-in trying to tell you what is going on
+dalam mencoba memberitahu apa yang sedang terjadi
 
 667
 00:32:38,260 --> 00:32:40,260
-and only the other half on working on stuff.
+dan hanya separuh lainnya mengerjakan hal lain.
 
 668
 00:32:40,260 --> 00:32:42,450
-I've been happy to do that, but is very hard.
+Saya telah senang melakukannya, namun sangat sulit.
 
 669
 00:32:43,270 --> 00:32:45,870
-And as long as I'm talking to myself
+Selaam saya berbicara pada diri saya sendiri
 
 670
 00:32:45,870 --> 00:32:50,110
-or replying to inquiries that come to the Leader's mailbox
+atau membalas pertanyaan yang masuk ke kotak surat pemimpin
 
 671
 00:32:50,110 --> 00:32:52,110
-there are some sort of intrinsic limits:
+terdapat beberapa batasan intrinsik:
 
 672
 00:32:52,600 --> 00:32:55,310
-if you are in a team with more people
+jika Anda di dalam tim dengan orang lebih
 
 673
 00:32:55,310 --> 00:32:56,490
-you need to discuss things
+Anda perlu berdiskusi
 
 674
 00:32:56,490 --> 00:32:58,720
-and if you force yourself to discuss things publicly
+dan jika Anda memaksa berdiskusi sesuatu secara terbuka
 
 675
 00:32:58,720 --> 00:33:00,720
-you don't have these intrinsic limits.
+Anda tidak memiliki batasan intrinsik ini.
 
 676
 00:33:01,160 --> 00:33:05,580
-And the third problem is that there is very little institutional memory.
+Dan masalah ketiga adalah terdapat sangat sedikit ingatan institusional.
 
 677
 00:33:06,920 --> 00:33:11,730
-We keep on, essentially, rediscover the job
+Kita teruskan, dasarnya, menemukan kembali pekerjaan
 
 678
 00:33:11,980 --> 00:33:13,730
-at each DPL change.
+pada setiap perubahan DPL. 
 
 679
 00:33:14,660 --> 00:33:17,250
-Yes, I can write a DPL Howto
+Ya, saya bisa menulis DPL Howto
 
 680
 00:33:17,250 --> 00:33:19,250
-with the help of all past DPLs.
+dengan bantuan dari semua DPL terdahulu.
 
 681
 00:33:19,250 --> 00:33:21,920
-We can do that, but things change
+Kita dapat melakukannya, namun hal terus berubah
 
 682
 00:33:21,920 --> 00:33:24,710
-and essentially the key of the problem is that
+dan dasarnya kunci dari masalah adalah 
 
 683
 00:33:25,170 --> 00:33:28,700
-being the DPL is unlike any other task in the project:
+menjadi DPL tidak seperti pekerjaan lain di dalam proyek: 
 
 684
 00:33:29,370 --> 00:33:33,720
-it's difficult to know who will be a good DPL before
+sangat sulit untuk mengetahui siapa yang akan menjadi DPL yang baik sebelumnya
 
 685
 00:33:33,730 --> 00:33:36,310
-because he or she has never done that before
+karena dia belum pernah melakukan hal ini
 
 686
 00:33:36,540 --> 00:33:39,030
-and there is essentially only trial and error.
+dan tentunya terdapat coba dan salah. 
 
 687
 00:33:39,030 --> 00:33:41,890
