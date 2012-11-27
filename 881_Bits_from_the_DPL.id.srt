@@ -2769,133 +2769,133 @@ dan tentunya terdapat coba dan salah.
 
 687
 00:33:39,030 --> 00:33:41,890
-There is very little institutional memory of how to do things.
+Terdapat ingatan institusional yang sangat sedikit bagaimana kita melakukan sesuatu.
 
 688
 00:33:44,840 --> 00:33:46,210
-How can we fix this?
+Bagaimana kita bisa memperbaiki ini?
 
 689
 00:33:46,410 --> 00:33:48,820
-I've been thinking a lot about this,
+Saya telah banyak berpikir soal ini,
 
 690
 00:33:48,820 --> 00:33:52,190
-is one of the reason why I decided to run again for a third term,
+inilah salah satu alasan mengapa saya memutuskan untuk mengajukan lagi untuk ketiga kali,
 
 691
 00:33:53,340 --> 00:33:55,340
-essentially I think the problem is that
+permasalahan mendasar yang saya pikir adalah
 
 692
 00:33:55,500 --> 00:34:00,620
-the role of the DPL is a relic of the "benevolent dictator" era in the
+peran dari DPL adalah peninggalan antik dari masa "benevolent dictator" di Free Software.
 Free Software.
 
 693
 00:34:01,230 --> 00:34:03,520
-It made a sense in the past,
+Masuk akan di masa lalu,
 
 694
 00:34:03,630 --> 00:34:08,560
-today projects of the size of Debian are not run in this way
+proyek sekarang dengan ukuran Debian tidak dijalankan sepert ini.
 
 695
 00:34:08,560 --> 00:34:11,310
-not even for only the management part.
+tidak juga hanya untuk bagian manajemen.
 
 696
 00:34:11,810 --> 00:34:16,050
-We do not do the technical part with a benevolent dictator, which is very
-good,
+Kita melakukan bagian teknikal dengan benevolent dictator, 
+yang itu sangat baik,
 
 697
 00:34:16,710 --> 00:34:19,530
-but we do that for all the kind of management part.
+namun kita melakukannya untuk semua bagian manajemen.
 
 698
 00:34:20,270 --> 00:34:24,350
-I think the only solution possible here
+Saya pikir solusi yang mungkin adalah
 
 699
 00:34:24,350 --> 00:34:27,410
-is have some sort of board of directors
+memiliki semacam dewan direktur
 
 700
 00:34:27,410 --> 00:34:29,410
-as other projects have
+sebagaimana proyek lain
 
 701
 00:34:29,410 --> 00:34:32,090
-which essentially helps the DPL.
+yang dasarnya membantu DPL.
 
 702
 00:34:32,400 --> 00:34:34,440
-The role of the DPL should not disappear.
+Peran dari DPL tidak boleh hilang.
 
 703
 00:34:34,440 --> 00:34:37,680
-I think we should try to keep this as informal as possible
+Saya pikir kita harus menjaga hal ini se-informal mungkin
 
 704
 00:34:37,970 --> 00:34:41,850
-but if we have a group of people that we can call the Debian Board of Directors
+namun jika kita memiliki sekelompok orang yang kita sebagai Dewan Direktur Debian
 
 705
 00:34:41,850 --> 00:34:44,260
-that can have some sort of turnover
+yang bisa memiliki semacam pergantian
 
 706
 00:34:45,140 --> 00:34:47,620
-to guarantee that there is some institutional memory
+untuk menjamin terdapat ingatan institusional
 
 707
 00:34:47,620 --> 00:34:50,440
-so they should not be tied to the normal DPL period,
+sehingga mereka tidak harus terikat dengan periode normal DPL, 
 
 708
 00:34:50,440 --> 00:34:53,900
-otherwise you'd have the problem of institutional memory again,
+jika tidak Anda akan menghadapi masalah ingatan institusional lagi,
 
 709
 00:34:53,900 --> 00:34:56,710
-with periodic meetings for transparency
+dengan rapat berkala untuk transparansi
 
 710
 00:34:57,550 --> 00:35:00,360
-and if we do have this
+dan jika kita melakukan ini
 
 711
 00:35:00,360 --> 00:35:02,670
-you can have the people on this kind of board
+anda dapat memiliki orang semacam ini di dewan
 
 712
 00:35:02,670 --> 00:35:06,860
-that help out and show if themselves they will be able to do
+yang membantu dan menunjukkan mereka bahwa mereka mampu
 
 713
 00:35:06,860 --> 00:35:08,860
-good DPLs or not.
+melakukan DPL secara baik atau tidak.
 
 714
 00:35:08,860 --> 00:35:11,670
-I think this is the only way
+Saya pikir ini adalah satu-satunya cara
 
 715
 00:35:11,670 --> 00:35:13,930
-to make the role of the DPL scalable
+untuk membuat peran DPL dapat ber-skala
 
 716
 00:35:13,930 --> 00:35:18,530
-without changing the nature of what the institution is.
+tanpa harus mengubah sifat alami dari institusi.
 
 717
 00:35:18,530 --> 00:35:20,910
-And as an interim solution
+Dan sebagai solusi interim
 
 718
 00:35:20,910 --> 00:35:23,220
-I'm trying to collect a group of DPL helpers
+Saya mencoba mengumpulkan sekolompok asisten DPL
 
 719
 00:35:23,250 --> 00:35:25,980
