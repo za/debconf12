@@ -253,7 +253,6 @@ Bravo! Untuk semuanya! Kita membuatnya!
 64
 00:03:18,650 --> 00:03:23,120
 Namun, satu hal menorehkan sejarah
-But then, one thing is making history
 
 65
 00:03:23,120 --> 00:03:25,810
@@ -325,7 +324,7 @@ Saya pikir sangat berguna untuk mengingatnya
 
 82
 00:04:15,610 --> 00:04:20,280
-dan untuk mengingatkan mengapa kita berkontribusi ke Debian dan buka ke proyek serupa lainnya.
+dan untuk mengingatkan mengapa kita berkontribusi ke Debian dan bukan ke proyek serupa lainnya.
 
 83
 00:04:20,280 --> 00:04:21,880
@@ -386,7 +385,6 @@ Setiap bit dari infrastruktur Debian adalah bebas
 97
 00:05:02,030 --> 00:05:05,650
 dan tak seorang pun mau menerima jika kita membuat Debian menggunakan seperti 
-and nobody would accept if we start making Debian using like
 
 98
 00:05:05,650 --> 00:05:08,420
@@ -486,7 +484,7 @@ Saat masyarakat membutuhkan keputusan apakah suatu perangkat lunak itu bebas ata
 
 122
 00:06:08,300 --> 00:06:10,150
-yang perlu dipertimbangkan Fress Software atau tidak
+yang perlu dipertimbangkan Free Software atau tidak
 
 123
 00:06:10,150 --> 00:06:12,450
@@ -499,7 +497,6 @@ mereka mengacu ke Free Software Foundation,
 125
 00:06:14,050 --> 00:06:15,470
 mereka mengacu ke OSI, 
-they go to the OSI,
 
 126
 00:06:15,470 --> 00:06:16,290
@@ -539,11 +536,13 @@ namun kami memiliki semacam budaya keunggulan teknikal.
 
 135
 00:06:40,570 --> 00:06:46,000
-Kita memiliki Kebijakan, di mana telah kita kodifikasi kebutuhan kualitas untuk paket;
+Kita memiliki Kebijakan, di mana telah kita kodifikasi
+kebutuhan kualitas untuk paket;
 
 136
 00:06:46,000 --> 00:06:49,120
-kita memiliki jumlah besar sekali dari testing: kita punya Lintian, kita punya Piuparts;
+kita memiliki jumlah besar sekali dari testing:
+kita punya Lintian, kita punya Piuparts;
 
 137
 00:06:49,140 --> 00:06:52,620
@@ -555,7 +554,8 @@ kita memiliki maintainer yang merupakan pakar perangkat lunak.
 
 139
 00:06:55,850 --> 00:07:01,680
-Kita mencoba mendorong orang untuk me-maintain perangkat lunak di Debian jika mereka mengerti soal pemaketan
+Kita mencoba mendorong orang untuk me-maintain
+perangkat lunak di Debian jika mereka mengerti soal pemaketan
 
 140
 00:07:01,680 --> 00:07:04,950
@@ -692,7 +692,6 @@ dalam ekosistem hari ini, khususnya dalam distro Free Software.
 173
 00:08:38,120 --> 00:08:42,000
 Dan sekali kita memiliki fenomena kewaspadaan komunitas:
-And once more we have a phenomenon of community awareness:
 
 174
 00:08:42,000 --> 00:08:46,020
@@ -757,7 +756,6 @@ Dan ini merupakan aturan default.
 189
 00:09:32,570 --> 00:09:35,900
 Semua keputusan dalam Debian, secara default, 
-All decisions in Debian, by default, diambil dengan cara ini
 
 190
 00:09:35,900 --> 00:09:37,770
@@ -858,7 +856,6 @@ keputusan dibuat seperti ini.
 214
 00:10:46,820 --> 00:10:50,060
 Dan poin terakhir,
-And last point,
 
 215
 00:10:50,060 --> 00:10:53,300
@@ -950,7 +947,7 @@ dan saya pikir hal ini hebat.
 
 237
 00:11:53,400 --> 00:12:01,000
-Ringkasnya, poin saya di sini adlaah Debian memiliki peran yang sangat penting untuk dimainkan
+Ringkasnya, poin saya di sini adalah Debian memiliki peran yang sangat penting untuk dimainkan
 
 238
 00:12:01,000 --> 00:12:03,600
@@ -971,7 +968,6 @@ Saya pikir secara umum Free Software akan menderita dari kegagalan Debian menyam
 242
 00:12:16,420 --> 00:12:19,000
 Jadi pertanyaanya adalah:
-So the question is:
 
 243
 00:12:19,000 --> 00:12:23,710
@@ -1003,7 +999,7 @@ untuk menemukan relawan baru untuk bergabung ke proyek
 
 250
 00:12:45,860 --> 00:12:50,270
-dan jika Anda telah mendengar saya berbicara di DebConfi selama dua tahun
+dan jika Anda telah mendengar saya berbicara di DebConf selama dua tahun
 
 251
 00:12:50,270 --> 00:12:53,320
@@ -1088,7 +1084,8 @@ dan untuk bekerja pada paket tertentu dalam arsip.
 
 271
 00:13:50,280 --> 00:13:56,950
-Saya kira kita hrus berhenti menggunakan kurangnya SDM sebagai alasan
+Saya kira kita harus berhenti
+menggunakan kurangnya SDM sebagai alasan
 
 272
 00:13:56,950 --> 00:14:01,310
@@ -1104,8 +1101,8 @@ berjalan sangat baik.
 
 275
 00:14:06,300 --> 00:14:12,120
-Apa yang perlu kita lakukan adalah penggunaan SDM yang kita miliki dengan lebih baik
-What we really need to do is to actually better use the manpower that we do have
+Apa yang perlu kita lakukan adalah
+penggunaan SDM yang kita miliki dengan lebih baik
 
 276
 00:14:12,120 --> 00:14:14,590
@@ -1165,7 +1162,7 @@ untuk membuat kontribusi ke proyek Debian lebih mudah
 
 290
 00:14:57,820 --> 00:15:01,990
-dan jika sesorang memulai bekerj pada suatu paket daun dalam arsip
+dan jika sesorang memulai bekerja pada suatu paket daun dalam arsip
 
 291
 00:15:01,990 --> 00:15:05,330
@@ -1181,7 +1178,7 @@ Begitulah faktanya saya pikir bagaimana mayoritas kita terlibat dalam proyek Deb
 
 294
 00:15:10,700 --> 00:15:13,240
-berakhir denga nmelakukan hal yang terus dan terus lebih penting
+berakhir dengan melakukan hal yang terus dan terus lebih penting
 
 295
 00:15:13,240 --> 00:15:16,360
@@ -1290,7 +1287,6 @@ dan seorang pemaket yang baik tidak dibutuhkan oleh pengembang perangkat lunak y
 321
 00:16:20,330 --> 00:16:22,820
 Kita membutuhkan banyak sekali keahlian yang beragam
-We need a whole lot of different skills
 
 322
 00:16:22,820 --> 00:16:28,260
@@ -1323,7 +1319,6 @@ Anda akan bertemu orang yang memiliki latar belakang yang sangat berbeda dengan 
 329
 00:16:48,390 --> 00:16:50,390
 sangat berbeda pendapat dengan Anda, 
-very different point of view than yours,
 
 330
 00:16:50,390 --> 00:16:55,730
@@ -1571,7 +1566,6 @@ namun semua orang yang ingin berencana
 391
 00:19:42,240 --> 00:19:43,400
 hal tersebut merupakan bantuan besar.
-that's a huge help.
 
 392
 00:19:43,400 --> 00:19:46,320
@@ -1874,7 +1868,6 @@ namun hal ini juga berarti terdapat beberapa maintainer
 466
 00:23:11,360 --> 00:23:12,910
 yang menelantarkan pekerjaan mereka
-that they kind of neglected their work
 
 467
 00:23:12,910 --> 00:23:16,510
@@ -2319,11 +2312,12 @@ untuk melakukan pre-install Debian dalam mesin mereka?"
 
 576
 00:28:27,210 --> 00:28:30,980
-Hmm. coba cari relawan yang senang meluangkan waktunya
+Hmm, coba cari relawan yang senang meluangkan waktunya
 
 577
 00:28:30,980 --> 00:28:35,150
-untuk melakukan lbi ke produsen perangkat keras untuk meng-install Debian.
+untuk melakukan lobi ke produsen perangkat keras
+untuk meng-install Debian.
 
 578
 00:28:35,690 --> 00:28:36,870
@@ -2569,7 +2563,7 @@ tanpa merongrong aset lain yang kita miliki?
 
 638
 00:31:20,100 --> 00:31:21,910
-Dan tanggung jawabn legal:
+Dan tanggung jawab legal:
 
 639
 00:31:21,910 --> 00:31:24,290
@@ -2676,7 +2670,6 @@ Saya telah mencoba... Saya bekerja cukup keras untuk itu:
 664
 00:32:32,090 --> 00:32:35,240
 Saya pikir seperti separuh waktu saya
-I think I spend like half of my time
 
 665
 00:32:35,240 --> 00:32:36,110
@@ -2696,7 +2689,7 @@ Saya telah senang melakukannya, namun sangat sulit.
 
 669
 00:32:43,270 --> 00:32:45,870
-Selaam saya berbicara pada diri saya sendiri
+Selama saya berbicara pada diri saya sendiri
 
 670
 00:32:45,870 --> 00:32:50,110
@@ -2793,7 +2786,7 @@ Free Software.
 
 693
 00:34:01,230 --> 00:34:03,520
-Masuk akan di masa lalu,
+Masuk akal di masa lalu,
 
 694
 00:34:03,630 --> 00:34:08,560
