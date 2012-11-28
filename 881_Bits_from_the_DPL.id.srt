@@ -180,7 +180,7 @@ dan jika kita lihat Debian sekarang
 
 46
 00:02:26,620 --> 00:02:29,930
-kami memiliki hingga empat ratus ribu paket biner,
+kami memiliki hingga empat puluh ribu paket biner,
 
 47
 00:02:29,930 --> 00:02:30,940
